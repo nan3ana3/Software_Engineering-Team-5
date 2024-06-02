@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./d-m.css" />
+
+  <style>
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Regular.otf");
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-SemiBold.otf");
+      font-weight: 600;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Bold.otf");
+      font-weight: 500;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-ExtraBold.otf");
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="dm8">
+    <!-- <img class="image-29-icon1" alt="" src="./public/image-29@2x.png" /> -->
+
+    <main class="navigation-group">
+      <div class="navigation8">
+        <div class="navigation-inner25">
+          <div class="frame-parent30">
+            <div class="menu-icon-wrapper">
+              <img class="menu-icon" loading="lazy" alt="" src="./public/vector.svg" />
+            </div>
+            <a class="main10">Main</a>
+          </div>
+        </div>
+        <div class="navigation-inner26" id="frameContainer1">
+          <div class="message-parent5">
+            <img class="message-icon8" loading="lazy" alt="" src="./public/message8.svg" />
+
+            <div class="dm-wrapper7">
+              <div class="dm9">DM</div>
+            </div>
+          </div>
+        </div>
+        <div class="navigation-inner27" id="frameContainer2">
+          <div class="frame-parent31">
+            <div class="face-wrapper2">
+              <img class="face-icon8" loading="lazy" alt="" src="./public/face.svg" />
+            </div>
+            <div class="mypage8">Mypage</div>
+          </div>
+        </div>
+        <div class="navigation-inner28">
+          <div class="frame-parent32">
+            <div class="group-wrapper2">
+              <img class="group-icon8" loading="lazy" alt="" src="./public/group2.svg" />
+            </div>
+            <div class="logout8">Logout</div>
+          </div>
+        </div>
+      </div>
+      <section class="frame-wrapper4">
+        <div class="frame-parent33">
+          <div class="frame-wrapper5">
+            <div class="user-avatar-parent">
+              <div class="user-avatar"></div>
+              <div class="to-user-name-wrapper">
+                <h1 class="to-user-name">To. user name</h1>
+              </div>
+            </div>
+          </div>
+          <textarea class="group-textarea" placeholder="메세지" rows="{20}" cols="{56}">
+            </textarea>
+          <button class="frame-button" id="frameButton">
+            <b class="b">전송하기</b>
+          </button>
+        </div>
+      </section>
+    </main>
+    <div class="d491">D+49</div>
+    <div class="frame-parent34">
+      <div class="image-container-parent">
+        <div class="image-container">
+          <div class="image-container-child"></div>
+          <div class="image-layers"></div>
+          <div class="image-layers1"></div>
+          <div class="image-layers2"></div>
+          <div class="image-layers3"></div>
+        </div>
+        <div class="overlay"></div>
+      </div>
+      <div class="bottom-bar"></div>
+    </div>
+  </div>
+
+  <script>
+    var frameContainer1 = document.getElementById("frameContainer1");
+    if (frameContainer1) {
+      frameContainer1.addEventListener("click", function (e) {
+        window.location.href = "./frame6.html";
+      });
+    }
+
+    var frameContainer2 = document.getElementById("frameContainer2");
+    if (frameContainer2) {
+      frameContainer2.addEventListener("click", function (e) {
+        window.location.href = "./frame4.html";
+      });
+    }
+
+    var frameButton = document.getElementById("frameButton");
+    if (frameButton) {
+      frameButton.addEventListener("click", function (e) {
+        window.location.href = "./frame7.html";
+      });
+    }
+  </script>
+</body>
+
+</html>

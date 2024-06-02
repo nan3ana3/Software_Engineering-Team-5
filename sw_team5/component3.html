@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./component3.css" />
+
+    <style>
+      @font-face {
+        font-family: "Pretendard";
+        src: url("./public/Pretendard-Regular.otf");
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Pretendard";
+        src: url("./public/Pretendard-SemiBold.otf");
+        font-weight: 600;
+      }
+      @font-face {
+        font-family: "Pretendard";
+        src: url("./public/Pretendard-Bold.otf");
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "Pretendard";
+        src: url("./public/Pretendard-ExtraBold.otf");
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div22">
+      <div class="navigation4">
+        <div class="navigation-inner9">
+          <div class="frame-parent7">
+            <div class="vector-frame">
+              <img
+                class="vector-icon2"
+                loading="lazy"
+                alt=""
+                src="./public/vector.svg"
+              />
+            </div>
+            <a class="main6">Main</a>
+          </div>
+        </div>
+        <div class="navigation-inner10" id="frameContainer1">
+          <div class="message-parent1">
+            <img
+              class="message-icon4"
+              loading="lazy"
+              alt=""
+              src="./public/message4.svg"
+            />
+
+            <div class="dm-wrapper2">
+              <div class="dm4">DM</div>
+            </div>
+          </div>
+        </div>
+        <div class="navigation-inner11" id="frameContainer2">
+          <div class="frame-parent8">
+            <div class="face-container">
+              <img
+                class="face-icon4"
+                loading="lazy"
+                alt=""
+                src="./public/face.svg"
+              />
+            </div>
+            <div class="mypage4">Mypage</div>
+          </div>
+        </div>
+        <div class="navigation-inner12">
+          <div class="frame-parent9">
+            <div class="group-container">
+              <img
+                class="group-icon4"
+                loading="lazy"
+                alt=""
+                src="./public/group1.svg"
+              />
+            </div>
+            <div class="logout4">Logout</div>
+          </div>
+        </div>
+      </div>
+      <section class="child">
+        <div class="frame-parent10">
+          <div class="frame-wrapper">
+            <div class="frame-parent11">
+              <div class="ellipse-parent">
+                <div class="frame-child5"></div>
+                <div class="frame-wrapper1">
+                  <div class="frame-parent12">
+                    <div class="user-wrapper">
+                      <h3 class="user6">user 닉네임~</h3>
+                    </div>
+                    <input class="input" placeholder="한줄소개~" type="text" />
+                  </div>
+                </div>
+              </div>
+              <div class="dm-wrapper3">
+                <img
+                  class="dm-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./public/dm.svg"
+                  id="dM"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="frame-parent13">
+            <div class="frame-parent14">
+              <img
+                class="frame-child6"
+                loading="lazy"
+                alt=""
+                src="./public/group-21291.svg"
+              />
+
+              <img
+                class="frame-child7"
+                loading="lazy"
+                alt=""
+                src="./public/group-2189.svg"
+              />
+
+              <img
+                class="frame-child8"
+                loading="lazy"
+                alt=""
+                src="./public/group-2189.svg"
+              />
+
+              <img
+                class="frame-child9"
+                loading="lazy"
+                alt=""
+                src="./public/group-2189.svg"
+              />
+            </div>
+            <div class="div23">
+              <div class="item"></div>
+              <div class="div24">사진 설명</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var frameContainer1 = document.getElementById("frameContainer1");
+      if (frameContainer1) {
+        frameContainer1.addEventListener("click", function (e) {
+          window.location.href = "./frame6.html";
+        });
+      }
+      
+      var frameContainer2 = document.getElementById("frameContainer2");
+      if (frameContainer2) {
+        frameContainer2.addEventListener("click", function (e) {
+          window.location.href = "./frame4.html";
+        });
+      }
+      
+      var dM = document.getElementById("dM");
+      if (dM) {
+        dM.addEventListener("click", function (e) {
+          window.location.href = "./d-m.html";
+        });
+      }
+      </script>
+  </body>
+</html>
