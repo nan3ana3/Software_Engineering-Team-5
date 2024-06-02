@@ -1,144 +1,147 @@
-.vector-icon2 {
+.navigation-icons2 {
   height: 30px;
   width: 31px;
   position: relative;
 }
-.vector-frame {
+.navigation-icons-wrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0 var(--padding-9xs);
 }
-.main6 {
+.main8 {
   text-decoration: none;
   position: relative;
   color: inherit;
   display: inline-block;
   min-width: 39px;
 }
-.frame-parent7,
-.navigation-inner9 {
+.frame-parent21,
+.navigation-inner17 {
   overflow: hidden;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frame-parent7 {
+.frame-parent21 {
   flex-direction: column;
   padding: var(--padding-sm) var(--padding-lg);
   gap: var(--gap-7xs);
 }
-.navigation-inner9 {
+.navigation-inner17 {
   flex-direction: row;
   padding: var(--padding-mid) var(--padding-7xs);
 }
-.message-icon4 {
+.message-icon6 {
   width: 38px;
   height: 40px;
   position: relative;
 }
-.dm4 {
+.dm6 {
   position: relative;
   display: inline-block;
   min-width: 28px;
 }
-.dm-wrapper2,
-.message-parent1,
-.navigation-inner10 {
+.dm-wrapper5,
+.message-parent3,
+.navigation-inner18 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.dm-wrapper2 {
+.dm-wrapper5 {
   flex-direction: row;
   padding: 0 var(--padding-8xs);
 }
-.message-parent1,
-.navigation-inner10 {
+.message-parent3,
+.navigation-inner18 {
   overflow: hidden;
 }
-.message-parent1 {
+.message-parent3 {
   flex-direction: column;
   padding: var(--padding-sm) var(--padding-lg);
   gap: var(--gap-7xs);
 }
-.navigation-inner10 {
+.navigation-inner18 {
   flex-direction: row;
   padding: var(--padding-mid) var(--padding-7xs);
   cursor: pointer;
 }
-.face-icon4 {
+.face-icon6 {
   height: 31.5px;
   width: 35px;
   position: relative;
 }
-.face-container {
+.mypage-content2 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0 var(--padding-mini);
 }
-.mypage4 {
+.mypage6 {
   position: relative;
   display: inline-block;
   min-width: 66px;
 }
-.frame-parent8,
-.navigation-inner11 {
+.mypage-content-group,
+.navigation-inner19 {
   overflow: hidden;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frame-parent8 {
+.mypage-content-group {
   flex-direction: column;
   padding: var(--padding-sm) var(--padding-lg);
   gap: var(--gap-7xs);
 }
-.navigation-inner11 {
+.navigation-inner19 {
   margin-left: -13.5px;
   flex-direction: row;
   padding: var(--padding-mid) var(--padding-7xs);
   cursor: pointer;
 }
-.group-icon4 {
+.group-icon6 {
   height: 33px;
   width: 30px;
   position: relative;
 }
-.group-container {
+.logout-content2 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0 var(--padding-smi);
 }
-.logout4 {
+.logout6 {
+  text-decoration: none;
   position: relative;
+  color: inherit;
   display: inline-block;
   min-width: 57px;
 }
-.frame-parent9 {
+.logout-content-parent {
   flex-direction: column;
   padding: var(--padding-sm) var(--padding-lg);
   gap: var(--gap-7xs);
 }
-.frame-parent9,
-.navigation-inner12,
-.navigation4 {
+.logout-content-parent,
+.navigation-inner20,
+.navigation6 {
   overflow: hidden;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.navigation-inner12 {
+.navigation-inner20 {
   margin-left: -9px;
   flex-direction: row;
   padding: var(--padding-mid) var(--padding-7xs);
 }
-.navigation4 {
+.navigation6 {
+  margin-top: -194px;
   height: 2500px;
   width: 100px;
   background-color: var(--color-antiquewhite);
@@ -148,33 +151,40 @@
   box-sizing: border-box;
   gap: var(--gap-11xs-2);
 }
-.frame-child5 {
+.user-information-child {
   height: 119px;
   width: 119px;
   position: relative;
   border-radius: 50%;
   background-color: var(--color-whitesmoke-400);
 }
-.user6 {
+.user7 {
   margin: 0;
   position: relative;
   font-size: inherit;
   font-weight: 500;
   font-family: inherit;
 }
-.user-wrapper {
+.input1,
+.nickname-content,
+.nickname-details {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+}
+.nickname-details {
+  flex-direction: row;
   padding: 0 var(--padding-6xs);
 }
-.input {
+.input1,
+.nickname-content {
+  align-self: stretch;
+}
+.input1 {
   width: 100%;
   border: 0;
   outline: 0;
   background-color: var(--color-whitesmoke-400);
-  align-self: stretch;
   height: 28px;
   overflow: hidden;
   flex-shrink: 0;
@@ -187,45 +197,40 @@
   color: var(--color-darkgray-100);
   min-width: 250px;
 }
-.ellipse-parent,
-.frame-parent12,
-.frame-wrapper1,
-.input {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.frame-parent12 {
-  align-self: stretch;
+.nickname-content {
   flex-direction: column;
   gap: var(--gap-xl);
 }
-.ellipse-parent,
-.frame-wrapper1 {
+.nickname-content-wrapper,
+.user-information {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   max-width: 100%;
 }
-.frame-wrapper1 {
+.nickname-content-wrapper {
   flex: 1;
   flex-direction: column;
   padding: var(--padding-lgi) 0 0;
   box-sizing: border-box;
   min-width: 348px;
 }
-.ellipse-parent {
+.user-information {
   width: 675px;
   flex-direction: row;
   gap: var(--gap-2xl);
 }
-.dm-icon {
+.icon {
   align-self: stretch;
   flex: 1;
   position: relative;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
+  object-fit: cover;
   cursor: pointer;
 }
-.dm-wrapper3 {
+.edit-profile {
   height: 89px;
   width: 85.6px;
   display: flex;
@@ -235,37 +240,36 @@
   padding: 0 0 var(--padding-xs);
   box-sizing: border-box;
 }
-.frame-parent11,
-.frame-wrapper {
+.profile-content,
+.profile-information {
   display: flex;
   flex-direction: row;
   max-width: 100%;
 }
-.frame-parent11 {
+.profile-information {
   flex: 1;
   align-items: flex-end;
   justify-content: space-between;
   gap: var(--gap-xl);
 }
-.frame-wrapper {
+.profile-content {
   width: 1162.6px;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0 var(--padding-9xs);
   box-sizing: border-box;
 }
-.frame-child6,
-.frame-child7,
-.frame-child8,
-.frame-child9 {
+.frame-child27,
+.frame-child28,
+.frame-child29,
+.frame-child30 {
   position: relative;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
   min-height: 285px;
 }
-.frame-parent14 {
-  align-self: stretch;
+.frame-parent22 {
   display: grid;
   flex-direction: row;
   align-items: flex-start;
@@ -273,7 +277,7 @@
   gap: var(--gap-xl);
   grid-template-columns: repeat(4, minmax(214px, 1fr));
 }
-.item {
+.description-background {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -283,12 +287,12 @@
   bottom: -198px;
   left: 1196px;
   border-radius: var(--br-7xs);
-  border: 0.9px solid var(--color-silver-100);
+  border: 0.9px solid var(--color-silver);
   box-sizing: border-box;
   transform: rotate(180deg);
   transform-origin: 0 0;
 }
-.div24 {
+.div25 {
   height: 33px;
   width: 334.5px;
   position: relative;
@@ -297,14 +301,14 @@
   max-width: 100%;
   z-index: 1;
 }
-.div23,
-.frame-parent13 {
+.description,
+.div24 {
   align-self: stretch;
   display: flex;
   justify-content: flex-start;
   max-width: 100%;
 }
-.div23 {
+.div24 {
   flex-direction: row;
   align-items: flex-start;
   padding: var(--padding-7xl) var(--padding-15xl);
@@ -312,49 +316,39 @@
   position: relative;
   min-height: 198px;
 }
-.frame-parent13 {
+.description {
   flex-direction: column;
   align-items: flex-end;
   gap: var(--gap-28xl);
   font-size: var(--font-size-xl-5);
   color: var(--color-darkgray-200);
 }
-.child,
-.div22,
-.frame-parent10 {
+.mypost,
+.profile-content-parent {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.frame-parent10 {
-  align-self: stretch;
-  flex-direction: column;
-  gap: var(--gap-36xl);
-  max-width: 100%;
-}
-.child,
-.div22 {
-  box-sizing: border-box;
   font-family: var(--font-pretendard);
 }
-.child {
+.profile-content-parent {
   width: 1200px;
   flex-direction: column;
-  padding: var(--padding-169xl) 0 0;
+  gap: var(--gap-36xl);
   max-width: calc(100% - 360px);
   flex-shrink: 0;
   text-align: left;
   font-size: var(--font-size-6xl);
   color: var(--color-midnightblue);
 }
-.div22 {
+.mypost {
   width: 100%;
   height: 1080px;
   position: relative;
   background-color: var(--color-white);
   overflow: hidden;
   flex-direction: row;
-  padding: 0 0 var(--padding-169xl);
+  padding: var(--padding-169xl) 0;
+  box-sizing: border-box;
   gap: var(--gap-241xl);
   line-height: normal;
   letter-spacing: normal;
@@ -363,43 +357,37 @@
   color: var(--color-coral-100);
 }
 @media screen and (max-width: 1200px) {
-  .div22 {
+  .mypost {
     gap: var(--gap-111xl);
   }
 }
 @media screen and (max-width: 1050px) {
-  .frame-parent11 {
+  .profile-information {
     flex-wrap: wrap;
   }
-  .frame-parent14 {
-    justify-content: center;
+  .frame-parent22 {
+    margin: 0 auto;
     grid-template-columns: repeat(2, minmax(214px, 370px));
   }
-  .child {
-    padding-top: 122px;
-    box-sizing: border-box;
-  }
-  .div22 {
+  .mypost {
     height: auto;
   }
 }
 @media screen and (max-width: 750px) {
-  .navigation4 {
+  .navigation6 {
     display: none;
   }
-  .ellipse-parent {
+  .user-information {
     flex-wrap: wrap;
   }
-  .frame-parent13 {
+  .description {
     gap: var(--gap-4xl);
   }
-  .frame-parent10 {
+  .profile-content-parent {
     gap: var(--gap-8xl);
-  }
-  .child {
     max-width: 100%;
   }
-  .div22 {
+  .mypost {
     gap: var(--gap-46xl);
     padding-left: var(--padding-xl);
     padding-right: var(--padding-xl);
@@ -407,29 +395,25 @@
   }
 }
 @media screen and (max-width: 450px) {
-  .user6 {
+  .user7 {
     font-size: var(--font-size-xl);
   }
-  .frame-wrapper1 {
+  .nickname-content-wrapper {
     min-width: 100%;
   }
-  .frame-child6,
-  .frame-child7,
-  .frame-child8,
-  .frame-child9 {
+  .frame-child27,
+  .frame-child28,
+  .frame-child29,
+  .frame-child30 {
     width: 100%;
   }
-  .frame-parent14 {
+  .frame-parent22 {
     grid-template-columns: minmax(214px, 1fr);
   }
-  .div24 {
+  .div25 {
     font-size: var(--font-size-base);
   }
-  .child {
-    padding-top: 79px;
-    box-sizing: border-box;
-  }
-  .div22 {
+  .mypost {
     gap: var(--gap-13xl);
   }
 }

@@ -10,7 +10,7 @@
   justify-content: flex-start;
   padding: 0 var(--padding-9xs);
 }
-.main3 {
+.main4 {
   text-decoration: none;
   position: relative;
   color: inherit;
@@ -33,24 +33,24 @@
   flex-direction: row;
   padding: var(--padding-mid) var(--padding-7xs);
 }
-.message-icon2 {
+.message-icon3 {
   width: 38px;
   height: 40px;
   position: relative;
 }
-.dm2 {
+.dm3 {
   position: relative;
   display: inline-block;
   min-width: 28px;
 }
-.dm-frame,
+.dm-wrapper1,
 .messages-content,
 .messages-content-wrapper {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.dm-frame {
+.dm-wrapper1 {
   flex-direction: row;
   padding: 0 var(--padding-8xs);
 }
@@ -68,7 +68,7 @@
   padding: var(--padding-mid) var(--padding-7xs);
   cursor: pointer;
 }
-.face-icon2 {
+.face-icon3 {
   height: 31.5px;
   width: 35px;
   position: relative;
@@ -80,7 +80,7 @@
   justify-content: flex-start;
   padding: 0 var(--padding-mini);
 }
-.mypage2 {
+.mypage3 {
   position: relative;
   display: inline-block;
   min-width: 66px;
@@ -103,7 +103,7 @@
   padding: var(--padding-mid) var(--padding-7xs);
   cursor: pointer;
 }
-.group-icon2 {
+.group-icon3 {
   height: 33px;
   width: 30px;
   position: relative;
@@ -115,7 +115,7 @@
   justify-content: flex-start;
   padding: 0 var(--padding-smi);
 }
-.logout2 {
+.logout3 {
   text-decoration: none;
   position: relative;
   color: inherit;
@@ -129,7 +129,7 @@
 }
 .logout-content-container,
 .logout-content1,
-.navigation2 {
+.navigation3 {
   overflow: hidden;
   display: flex;
   align-items: flex-start;
@@ -140,7 +140,7 @@
   flex-direction: row;
   padding: var(--padding-mid) var(--padding-7xs);
 }
-.navigation2 {
+.navigation3 {
   height: 2500px;
   width: 100px;
   background-color: var(--color-antiquewhite);
@@ -159,7 +159,7 @@
   display: none;
   max-width: 100%;
 }
-.signup {
+.signup1 {
   text-decoration: none;
   position: relative;
   font-size: var(--font-size-31xl);
@@ -176,7 +176,7 @@
   justify-content: center;
   padding: 0 var(--padding-xl) 0 var(--padding-2xl);
 }
-.div12 {
+.div13 {
   position: relative;
   font-size: var(--font-size-8xl);
   font-family: var(--font-pretendard);
@@ -192,7 +192,7 @@
   border-radius: var(--br-3xs);
   background-color: var(--color-snow);
 }
-.div13 {
+.div14 {
   position: relative;
   font-size: var(--font-size-mini);
   font-family: var(--font-pretendard);
@@ -238,7 +238,7 @@
   border-radius: var(--br-3xs);
   background-color: var(--color-snow);
 }
-.div14 {
+.div15 {
   position: relative;
   font-size: var(--font-size-mini);
   font-family: var(--font-pretendard);
@@ -270,7 +270,7 @@
   border-radius: var(--br-3xs);
   background-color: var(--color-snow);
 }
-.div15 {
+.div16 {
   position: relative;
   font-size: var(--font-size-mini);
   font-family: var(--font-pretendard);
@@ -297,14 +297,14 @@
   color: var(--black);
   text-align: left;
 }
-.frame-child4 {
+.frame-child21 {
   align-self: stretch;
   flex: 1;
   position: relative;
   border-radius: var(--br-3xs);
   background-color: var(--color-snow);
 }
-.div16 {
+.div17 {
   position: relative;
   font-size: var(--font-size-mini);
   font-family: var(--font-pretendard);
@@ -338,7 +338,7 @@
   width: 478px;
   gap: var(--gap-30xl);
 }
-.div17 {
+.div18 {
   position: relative;
   font-size: var(--font-size-8xl);
   font-family: var(--font-pretendard);
@@ -347,7 +347,7 @@
   display: inline-block;
   min-width: 94px;
 }
-.button2 {
+.button3 {
   cursor: pointer;
   border: 0;
   padding: var(--padding-lgi) var(--padding-xl);
@@ -363,17 +363,17 @@
   max-width: 100%;
   z-index: 1;
 }
-.button2:hover {
+.button3:hover {
   background-color: var(--color-chocolate-200);
 }
-.div11,
 .main-container,
-.main4 {
+.main5,
+.signup {
   display: flex;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.main4 {
+.main5 {
   margin: 0;
   align-self: stretch;
   flex: 1;
@@ -385,8 +385,8 @@
   gap: var(--gap-36xl);
   max-width: 100%;
 }
-.div11,
-.main-container {
+.main-container,
+.signup {
   align-items: flex-start;
 }
 .main-container {
@@ -396,7 +396,7 @@
   padding: var(--padding-9xl) 0 0;
   max-width: calc(100% - 607px);
 }
-.div11 {
+.signup {
   width: 100%;
   height: 1080px;
   position: relative;
@@ -413,15 +413,15 @@
   font-family: var(--font-pretendard);
 }
 @media screen and (max-width: 1200px) {
-  .div11 {
+  .signup {
     gap: var(--gap-234xl);
   }
 }
 @media screen and (max-width: 1050px) {
-  .signup {
+  .signup1 {
     font-size: var(--font-size-21xl);
   }
-  .main4 {
+  .main5 {
     padding-top: var(--padding-23xl);
     padding-bottom: var(--padding-46xl);
     box-sizing: border-box;
@@ -431,25 +431,25 @@
   .signup-elements {
     gap: var(--gap-5xl);
   }
-  .main4 {
+  .main5 {
     gap: var(--gap-8xl);
     padding-top: var(--padding-8xl);
     padding-bottom: var(--padding-23xl);
     box-sizing: border-box;
   }
-  .div11 {
+  .signup {
     gap: 127px;
   }
 }
 @media screen and (max-width: 450px) {
-  .navigation2 {
+  .navigation3 {
     display: none;
   }
-  .signup {
+  .signup1 {
     font-size: var(--font-size-11xl);
   }
-  .div12,
-  .div17,
+  .div13,
+  .div18,
   .id1,
   .password,
   .password1 {
@@ -458,7 +458,7 @@
   .main-container {
     max-width: 100%;
   }
-  .div11 {
+  .signup {
     gap: var(--gap-44xl);
     padding-left: var(--padding-xl);
     padding-right: var(--padding-xl);

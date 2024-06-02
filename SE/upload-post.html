@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
     <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./component3.css" />
+    <link rel="stylesheet" href="./upload-post.css" />
 
     <style>
       @font-face {
@@ -31,13 +31,13 @@
     </style>
   </head>
   <body>
-    <div class="div22">
+    <div class="uploadpost">
       <div class="navigation4">
         <div class="navigation-inner9">
-          <div class="frame-parent7">
-            <div class="vector-frame">
+          <div class="navigation-layout-parent">
+            <div class="navigation-layout">
               <img
-                class="vector-icon2"
+                class="navigation-icons1"
                 loading="lazy"
                 alt=""
                 src="./public/vector.svg"
@@ -61,8 +61,8 @@
           </div>
         </div>
         <div class="navigation-inner11" id="frameContainer2">
-          <div class="frame-parent8">
-            <div class="face-container">
+          <div class="profile-layout-parent">
+            <div class="profile-layout">
               <img
                 class="face-icon4"
                 loading="lazy"
@@ -74,79 +74,71 @@
           </div>
         </div>
         <div class="navigation-inner12">
-          <div class="frame-parent9">
-            <div class="group-container">
+          <div class="logout-layout-parent">
+            <div class="logout-layout">
               <img
                 class="group-icon4"
                 loading="lazy"
                 alt=""
-                src="./public/group1.svg"
+                src="./public/group.svg"
               />
             </div>
-            <div class="logout4">Logout</div>
+            <a class="logout4">Logout</a>
           </div>
         </div>
       </div>
-      <section class="child">
-        <div class="frame-parent10">
-          <div class="frame-wrapper">
-            <div class="frame-parent11">
-              <div class="ellipse-parent">
-                <div class="frame-child5"></div>
-                <div class="frame-wrapper1">
-                  <div class="frame-parent12">
-                    <div class="user-wrapper">
-                      <h3 class="user6">user 닉네임~</h3>
-                    </div>
-                    <input class="input" placeholder="한줄소개~" type="text" />
+      <section class="uploadpost-inner">
+        <div class="content-layout-parent">
+          <div class="content-layout">
+            <div class="wrapper2">
+              <h2 class="h22">나의 추억을 사진과 설명으로 남겨요</h2>
+            </div>
+            <div class="upload-area">
+              <div class="upload-fields">
+                <div class="image-upload">
+                  <img
+                    class="image-upload-child"
+                    loading="lazy"
+                    alt=""
+                    src="./public/group-2129.svg"
+                  />
+
+                  <div class="add-image-button">
+                    <div class="add-image-placeholder"></div>
+                    <div class="div19">이미지 추가하기</div>
                   </div>
                 </div>
-              </div>
-              <div class="dm-wrapper3">
                 <img
-                  class="dm-icon"
+                  class="upload-fields-child"
                   loading="lazy"
                   alt=""
-                  src="./public/dm.svg"
-                  id="dM"
+                  src="./public/group-2129.svg"
                 />
+
+                <img
+                  class="upload-fields-item"
+                  loading="lazy"
+                  alt=""
+                  src="./public/group-2129.svg"
+                />
+
+                <img
+                  class="upload-fields-inner"
+                  loading="lazy"
+                  alt=""
+                  src="./public/group-2189.svg"
+                />
+              </div>
+              <div class="description-input-parent">
+                <div class="description-input"></div>
+                <div class="div20">상세설명</div>
               </div>
             </div>
           </div>
-          <div class="frame-parent13">
-            <div class="frame-parent14">
-              <img
-                class="frame-child6"
-                loading="lazy"
-                alt=""
-                src="./public/group-21291.svg"
-              />
-
-              <img
-                class="frame-child7"
-                loading="lazy"
-                alt=""
-                src="./public/group-2189.svg"
-              />
-
-              <img
-                class="frame-child8"
-                loading="lazy"
-                alt=""
-                src="./public/group-2189.svg"
-              />
-
-              <img
-                class="frame-child9"
-                loading="lazy"
-                alt=""
-                src="./public/group-2189.svg"
-              />
-            </div>
-            <div class="div23">
-              <div class="item"></div>
-              <div class="div24">사진 설명</div>
-            </div>
+          <div class="wrapper3">
+            <button class="button4" id="button">
+              <div class="div21">업로드</div>
+            </button>
           </div>
         </div>
       </section>
@@ -156,21 +148,21 @@
       var frameContainer1 = document.getElementById("frameContainer1");
       if (frameContainer1) {
         frameContainer1.addEventListener("click", function (e) {
-          window.location.href = "./frame6.html";
+          window.location.href = "./recieved-d-m.html";
         });
       }
       
       var frameContainer2 = document.getElementById("frameContainer2");
       if (frameContainer2) {
         frameContainer2.addEventListener("click", function (e) {
-          window.location.href = "./frame4.html";
+          window.location.href = "./my-page.html";
         });
       }
       
-      var dM = document.getElementById("dM");
-      if (dM) {
-        dM.addEventListener("click", function (e) {
-          window.location.href = "./d-m.html";
+      var button = document.getElementById("button");
+      if (button) {
+        button.addEventListener("click", function (e) {
+          window.location.href = "./main-loged-in.html";
         });
       }
       </script>
