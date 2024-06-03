@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./login.css" />
+
+  <style>
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Regular.otf");
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Medium.otf");
+      font-weight: 500;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Bold.otf");
+      font-weight: 700;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-SemiBold.otf");
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login">
+    <div class="navigation4">
+      <div class="frame-parent17">
+        <div class="frame-wrapper8" id="frameContainer">
+          <div class="frame-parent18">
+            <div class="vector-wrapper1">
+              <img class="vector-icon3" alt="" src="./public/navigation-icon.svg" />
+            </div>
+            <div class="main4">Main</div>
+          </div>
+        </div>
+        <div class="frame-wrapper9" id="frameContainer1">
+          <div class="message-parent2">
+            <img class="message-icon4" alt="" src="./public/message4.svg" />
+
+            <div class="dm-wrapper1">
+              <div class="dm4">DM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-inner6" id="frameContainer1">
+        <div class="frame-parent19">
+          <div class="face-frame">
+            <img class="face-icon4" alt="" src="./public/face1.svg" />
+          </div>
+          <div class="mypage5">Mypage</div>
+        </div>
+      </div>
+      <div class="navigation-inner7" id="frameContainer2">
+        <div class="frame-parent20">
+          <div class="group-frame">
+            <img class="group-icon4" alt="" src="./public/group3.svg" />
+          </div>
+          <div class="logout4">Logout</div>
+        </div>
+      </div>
+    </div>
+    <div class="main-wrapper">
+      <div class="main5">
+        <div class="main-child"></div>
+        <div class="frame-parent21">
+          <div class="login-wrapper">
+            <h1 class="login1">login</h1>
+          </div>
+          <div class="div15">
+            <div class="id-parent">
+              <div class="id">ID</div>
+              <div class="frame-child20"></div>
+            </div>
+            <div class="pw-parent">
+              <h3 class="pw">PW</h3>
+              <div class="frame-child21"></div>
+            </div>
+          </div>
+        </div>
+        <div class="group">
+          <button class="button2" id="button">
+            <div class="div16">로그인</div>
+          </button>
+          <div class="frame">
+            <h3 class="h3" id="text1">회원가입</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var frameContainer = document.getElementById("frameContainer");
+    if (frameContainer) {
+      frameContainer.addEventListener("click", function (e) {
+        window.location.href = "main-loged-out.html";
+      });
+    }
+
+    var frameContainer1 = document.getElementById("frameContainer1");
+    if (frameContainer1) {
+      frameContainer1.addEventListener("click", function (e) {
+        window.location.href = "./recieved-d-m.html";
+      });
+    }
+
+    var frameContainer1 = document.getElementById("frameContainer1");
+    if (frameContainer1) {
+      frameContainer1.addEventListener("click", function (e) {
+        window.location.href = "./my-page.html";
+      });
+    }
+
+    var frameContainer2 = document.getElementById("frameContainer2");
+    if (frameContainer2) {
+      frameContainer2.addEventListener("click", function (e) {
+        window.location.href = "main-loged-out.html";
+      });
+    }
+
+    var button = document.getElementById("button");
+    if (button) {
+      button.addEventListener("click", function (e) {
+        window.location.href = "./main-loged-in.html";
+      });
+    }
+
+    var text1 = document.getElementById("text1");
+    if (text1) {
+      text1.addEventListener("click", function (e) {
+        window.location.href = "./login.html";
+      });
+    }
+  </script>
+</body>
+
+</html>
