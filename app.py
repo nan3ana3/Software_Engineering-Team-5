@@ -15,6 +15,9 @@ app.register_blueprint(user_bp, url_prefix='/users')
 app.register_blueprint(photo_bp, url_prefix='/photos')
 app.register_blueprint(dm_bp, url_prefix='/dms')
 
+@app.route('/', methods = ['GET'])
+def main_page():
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

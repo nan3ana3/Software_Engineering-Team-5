@@ -99,7 +99,7 @@
         <div class="group">
           <button class="button2" id="login-button">로그인</button>
           <div class="frame">
-            <h3 class="h3" id="text1">회원가입</h3>
+            <h3 class="h3" id="signup-button">회원가입</h3>
           </div>
         </div>
       </div>
@@ -142,10 +142,10 @@
       });
     }
 
-    var text1 = document.getElementById("text1");
-    if (text1) {
-      text1.addEventListener("click", function (e) {
-        window.location.href = "./login.html";
+    var signupButton = document.getElementById("signup-button");
+    if (signupButton) {
+      signupButton.addEventListener("click", function (e) {
+        window.location.href = "/users/signup";
       });
     }
 
