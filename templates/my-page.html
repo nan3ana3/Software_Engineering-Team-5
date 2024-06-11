@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/my-page.css" />
+
+  <style>
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Regular.otf");
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Medium.otf");
+      font-weight: 500;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Bold.otf");
+      font-weight: 700;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-SemiBold.otf");
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mypage2">
+    <div class="navigation2">
+      <div class="frame-parent5">
+        <div class="frame-wrapper3" id="frameContainer">
+          <div class="frame-parent6">
+            <div class="vector-container">
+              <img class="vector-icon1" alt="" src="./public/vector1.svg" />
+            </div>
+            <div class="main2">Main</div>
+          </div>
+        </div>
+        <div class="frame-wrapper4" id="frameContainer1">
+          <div class="message-container">
+            <img class="message-icon2" alt="" src="./public/message2.svg" />
+
+            <div class="dm-container">
+              <div class="dm2">DM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-inner2" id="frameContainer1">
+        <div class="frame-parent7">
+          <div class="face-wrapper">
+            <img class="face-icon2" alt="" src="./public/face2.svg" />
+          </div>
+          <div class="mypage3">Mypage</div>
+        </div>
+      </div>
+      <div class="navigation-inner3" id="frameContainer2">
+        <div class="frame-parent8">
+          <div class="group-wrapper">
+            <img class="group-icon2" alt="" src="./public/group2.svg" />
+          </div>
+          <div class="logout2">Logout</div>
+        </div>
+      </div>
+    </div>
+    <section class="mypage-inner">
+      <div class="frame-parent9">
+        <main class="frame-main">
+          <section class="frame-section">
+            <div class="frame-wrapper5">
+              <div class="ellipse-parent">
+                <div class="frame-child2"></div>
+                <img class="icon1" loading="lazy" alt="" src="./public/1@2x.png" id="image" />
+              </div>
+            </div>
+          </section>
+          <div class="user-info">
+            <h1 class="user-name">user name</h1>
+            <h2 class="h2">한 줄 소개</h2>
+          </div>
+        </main>
+        <img class="icon2" loading="lazy" alt="" src="./public/-1.svg" id="node" />
+      </div>
+    </section>
+  </div>
+
+  <script>
+    var frameContainer = document.getElementById("frameContainer");
+    if (frameContainer) {
+      frameContainer.addEventListener("click", function (e) {
+        window.location.href = "main-loged-out.html";
+      });
+    }
+
+    var frameContainer1 = document.getElementById("frameContainer1");
+    if (frameContainer1) {
+      frameContainer1.addEventListener("click", function (e) {
+        window.location.href = "./recieved-d-m.html";
+      });
+    }
+
+    var frameContainer1 = document.getElementById("frameContainer1");
+    if (frameContainer1) {
+      frameContainer1.addEventListener("click", function (e) {
+        window.location.href = "./my-page.html";
+      });
+    }
+
+    var frameContainer2 = document.getElementById("frameContainer2");
+    if (frameContainer2) {
+      frameContainer2.addEventListener("click", function (e) {
+        window.location.href = "main-loged-out.html";
+      });
+    }
+
+    var image = document.getElementById("image");
+    if (image) {
+      image.addEventListener("click", function (e) {
+        window.location.href = "./modify-me.html";
+      });
+    }
+
+    var node = document.getElementById("node");
+    if (node) {
+      node.addEventListener("click", function (e) {
+        window.location.href = "./my-post.html";
+      });
+    }
+  </script>
+</body>
+
+</html>

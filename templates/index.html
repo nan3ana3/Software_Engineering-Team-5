@@ -1,0 +1,209 @@
+<!-- main logged out -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="../static/css/global.css" />
+  <link rel="stylesheet" href="../static/css/index.css" />
+
+  <style>
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Regular.otf");
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Medium.otf");
+      font-weight: 500;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Bold.otf");
+      font-weight: 700;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-SemiBold.otf");
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mainlogedout">
+    <div class="navigation">
+      <div class="frame-parent">
+        <div class="frame-wrapper" id="frameContainer">
+          <div class="frame-group">
+            <div class="vector-wrapper">
+              <img class="vector-icon" loading="lazy" alt="" src="./public/vector.svg" />
+            </div>
+            <a class="main">Main</a>
+          </div>
+        </div>
+        <div class="frame-container" id="frameContainer1">
+          <div class="message-parent">
+            <img class="message-icon" loading="lazy" alt="" src="./public/message.svg" />
+
+            <div class="dm-wrapper">
+              <div class="dm">DM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-inner" id="frameContainer1">
+        <div class="mypage-content-parent">
+          <div class="mypage-content">
+            <img class="face-icon" loading="lazy" alt="" src="./public/face.svg" />
+          </div>
+          <div class="mypage">Mypage</div>
+        </div>
+      </div>
+      <div class="logout-content-wrapper" id="frameContainer2">
+        <div class="logout-content">
+          <div class="logout-button">
+            <img class="group-icon" loading="lazy" alt="" src="./public/group.svg" />
+          </div>
+          <div class="logout">Logout</div>
+        </div>
+      </div>
+    </div>
+    <section class="main-description-wrapper">
+      <div class="main-description">
+        <div class="main-description-inner">
+          <div class="parent">
+            <div class="div">모든 사진을 잇는 사진이음</div>
+            <div class="slogan">
+              <div class="div1">
+                <p class="p">사진으로 추억을 친구들과 나누고</p>
+                <p class="p1">메세지로 소통해요</p>
+              </div>
+              <div class="login-button-container">
+                <button class="button" id="start-service">
+                  <div class="div2">사진이음 시작하기</div>
+                </button>
+              </div>
+            </div>
+            <div class="div3">지금 이 서비스를 사용하는 친구는?</div>
+          </div>
+        </div>
+        <div class="div4">
+          <div class="user-row">
+            <div class="user">
+              <div class="profile-background"></div>
+              <div class="profile-picture-container">
+                <div class="profile-picture-container-child"></div>
+              </div>
+              <div class="user-name-container-parent">
+                <div class="user-name-container">
+                  <div class="kim-swim">KIM SWIM ~~</div>
+                </div>
+                <div class="div5">한 줄 소개</div>
+              </div>
+            </div>
+          </div>
+          <div class="user-row1">
+            <div class="user1">
+              <div class="user-child"></div>
+              <div class="user-inner">
+                <div class="frame-child"></div>
+              </div>
+              <div class="frame-div">
+                <div class="kim-swim-wrapper">
+                  <div class="kim-swim1">KIM SWIM ~~</div>
+                </div>
+                <div class="div6">한 줄 소개</div>
+              </div>
+            </div>
+          </div>
+          <div class="user-container">
+            <div class="user2">
+              <div class="user-item"></div>
+              <div class="user-inner1">
+                <div class="frame-item"></div>
+              </div>
+              <div class="frame-parent1">
+                <div class="kim-swim-container">
+                  <div class="kim-swim2">KIM SWIM ~~</div>
+                </div>
+                <div class="div7">한 줄 소개</div>
+              </div>
+            </div>
+          </div>
+          <div class="user-container1">
+            <div class="user3">
+              <div class="rectangle-div"></div>
+              <div class="user-inner2">
+                <div class="frame-inner"></div>
+              </div>
+              <div class="frame-parent2">
+                <div class="kim-swim-frame">
+                  <div class="kim-swim3">KIM SWIM ~~</div>
+                </div>
+                <div class="div8">한 줄 소개</div>
+              </div>
+            </div>
+          </div>
+          <div class="user4">
+            <div class="avatar"></div>
+            <div class="user-inner3">
+              <div class="ellipse-div"></div>
+            </div>
+            <div class="user-description">
+              <div class="kim-swim-wrapper1">
+                <div class="kim-swim4">KIM SWIM ~~</div>
+              </div>
+              <div class="div9">한 줄 소개</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    var frameContainer = document.getElementById("frameContainer");
+    if (frameContainer) {
+      frameContainer.addEventListener("click", function (e) {
+        window.location.href = "./index.html";
+      });
+    }
+
+    var frameContainer1 = document.getElementById("frameContainer1");
+    if (frameContainer1) {
+      frameContainer1.addEventListener("click", function (e) {
+        window.location.href = "./recieved-d-m.html";
+      });
+    }
+
+    var frameContainer1 = document.getElementById("frameContainer1");
+    if (frameContainer1) {
+      frameContainer1.addEventListener("click", function (e) {
+        window.location.href = "./my-page.html";
+      });
+    }
+
+    var frameContainer2 = document.getElementById("frameContainer2");
+    if (frameContainer2) {
+      frameContainer2.addEventListener("click", function (e) {
+        window.location.href = "./index.html";
+      });
+    }
+
+    var frameContainer3 = document.getElementById("start-service");
+    if (frameContainer3) {
+      frameContainer3.addEventListener("click", function (e) {
+        window.location.href = "./login.html";
+      });
+    }
+  </script>
+</body>
+
+</html>

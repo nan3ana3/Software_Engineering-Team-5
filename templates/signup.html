@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="../static/css/global.css" />
+  <link rel="stylesheet" href="../static/css/signup.css" />
+
+  <style>
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Regular.otf");
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Medium.otf");
+      font-weight: 500;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Bold.otf");
+      font-weight: 700;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-SemiBold.otf");
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="signup">
+    <div class="navigation5">
+      <div class="frame-parent22">
+        <div class="frame-wrapper10" id="frameContainer">
+          <div class="frame-parent23">
+            <div class="navigation-icons-wrapper">
+              <img class="navigation-icons" alt="" src="./public/navigation-icon.svg" />
+            </div>
+            <div class="main6">Main</div>
+          </div>
+        </div>
+        <div class="frame-wrapper11" id="frameContainer1">
+          <div class="message-parent3">
+            <img class="message-icon5" alt="" src="./public/message5.svg" />
+
+            <div class="dm-wrapper2">
+              <div class="dm5">DM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-inner8" id="frameContainer1">
+        <div class="frame-parent24">
+          <div class="face-wrapper1">
+            <img class="face-icon5" alt="" src="./public/face1.svg" />
+          </div>
+          <div class="mypage6">Mypage</div>
+        </div>
+      </div>
+      <div class="navigation-inner9" id="frameContainer2">
+        <div class="frame-parent25">
+          <div class="group-wrapper1">
+            <img class="group-icon5" alt="" src="./public/group3.svg" />
+          </div>
+          <div class="logout5">Logout</div>
+        </div>
+      </div>
+    </div>
+    <div class="main-container">
+      <form class="main7">
+        <div class="main-item"></div>
+        <div class="signup-form">
+          <div class="signup-wrapper">
+            <a class="signup1">Signup</a>
+          </div>
+          <div class="signup-form1">
+            <div class="group-div">
+              <div class="div17">닉네임</div>
+              <div class="rectangle-parent5">
+                <div class="frame-child22"></div>
+                <div class="div18">
+                  비밀번호와 비밀번호 확인의 문자가 같지 않습니다.
+                </div>
+              </div>
+            </div>
+            <div class="id-group">
+              <div class="id1">ID</div>
+              <div class="input-fields"></div>
+              <div class="div19">
+                비밀번호와 비밀번호 확인의 문자가 같지 않습니다.
+              </div>
+            </div>
+            <div class="password-parent">
+              <div class="password">password</div>
+              <div class="rectangle-parent6">
+                <div class="frame-child23"></div>
+                <div class="div20">
+                  비밀번호와 비밀번호 확인의 문자가 같지 않습니다.
+                </div>
+              </div>
+            </div>
+            <div class="password-group">
+              <div class="password1">password 확인</div>
+              <div class="frame-child24"></div>
+              <div class="div21">
+                비밀번호와 비밀번호 확인의 문자가 같지 않습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="button3" id="button">
+          <div class="div22">회원가입</div>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    var frameContainer = document.getElementById("frameContainer");
+    if (frameContainer) {
+      frameContainer.addEventListener("click", function (e) {
+        window.location.href = "main-loged-out.html";
+      });
+    }
+
+    var frameContainer1 = document.getElementById("frameContainer1");
+    if (frameContainer1) {
+      frameContainer1.addEventListener("click", function (e) {
+        window.location.href = "./recieved-d-m.html";
+      });
+    }
+
+    var frameContainer1 = document.getElementById("frameContainer1");
+    if (frameContainer1) {
+      frameContainer1.addEventListener("click", function (e) {
+        window.location.href = "./my-page.html";
+      });
+    }
+
+    var frameContainer2 = document.getElementById("frameContainer2");
+    if (frameContainer2) {
+      frameContainer2.addEventListener("click", function (e) {
+        window.location.href = "main-loged-out.html";
+      });
+    }
+
+    var button = document.getElementById("button");
+    if (button) {
+      button.addEventListener("click", function (e) {
+        window.location.href = "./login.html";
+      });
+    }
+  </script>
+</body>
+
+</html>

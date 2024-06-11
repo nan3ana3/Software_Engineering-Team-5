@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/my-post.css" />
+
+  <style>
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Regular.otf");
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Medium.otf");
+      font-weight: 500;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-Bold.otf");
+      font-weight: 700;
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./public/Pretendard-SemiBold.otf");
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mypost">
+    <div class="navigation8">
+      <div class="frame-parent37">
+        <div class="frame-wrapper18" id="frameContainer">
+          <div class="frame-parent38">
+            <div class="vector-wrapper4">
+              <img class="vector-icon6" alt="" src="./public/navigation-icon.svg" />
+            </div>
+            <div class="main10">Main</div>
+          </div>
+        </div>
+        <div class="frame-wrapper19" id="frameContainer1">
+          <div class="message-parent6">
+            <img class="message-icon8" alt="" src="./public/message8.svg" />
+
+            <div class="dm-wrapper6">
+              <div class="dm8">DM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-inner14" id="frameContainer1">
+        <div class="frame-parent39">
+          <div class="face-wrapper4">
+            <img class="face-icon8" alt="" src="./public/face1.svg" />
+          </div>
+          <div class="mypage9">Mypage</div>
+        </div>
+      </div>
+      <div class="navigation-inner15" id="frameContainer2">
+        <div class="frame-parent40">
+          <div class="group-wrapper4">
+            <img class="group-icon8" alt="" src="./public/group1.svg" />
+          </div>
+          <div class="logout8">Logout</div>
+        </div>
+      </div>
+    </div>
+    <section class="mypost-inner">
+      <section class="profile-content-parent">
+        <div class="profile-content1">
+          <div class="profile-information">
+            <div class="ellipse-container">
+              <div class="frame-child26"></div>
+              <div class="frame-wrapper20">
+                <div class="nickname-details-parent">
+                  <div class="nickname-details">
+                    <h3 class="user6">user 닉네임~</h3>
+                  </div>
+                  <input class="input1" placeholder="한줄소개~" type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="edit-profile1">
+              <img class="icon3" loading="lazy" alt="" src="./public/2@2x.png" id="image" />
+            </div>
+          </div>
+        </div>
+        <div class="user-information1">
+          <div class="div29">
+            <img class="child5" loading="lazy" alt="" src="./public/group-21292.svg" />
+
+            <img class="child6" loading="lazy" alt="" src="./public/group-2130.svg" />
+
+            <img class="child7" loading="lazy" alt="" src="./public/group-2131.svg" />
+
+            <img class="child8" loading="lazy" alt="" src="./public/group-21321.svg" />
+          </div>
+          <div class="div30">
+            <div class="description-background"></div>
+            <div class="div31">사진 설명</div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <script>
+    var frameContainer = document.getElementById("frameContainer");
+    if (frameContainer) {
+      frameContainer.addEventListener("click", function (e) {
+        window.location.href = "main-loged-out.html";
+      });
+    }
+
+    var frameContainer1 = document.getElementById("frameContainer1");
+    if (frameContainer1) {
+      frameContainer1.addEventListener("click", function (e) {
+        window.location.href = "./recieved-d-m.html";
+      });
+    }
+
+    var frameContainer1 = document.getElementById("frameContainer1");
+    if (frameContainer1) {
+      frameContainer1.addEventListener("click", function (e) {
+        window.location.href = "./my-page.html";
+      });
+    }
+
+    var frameContainer2 = document.getElementById("frameContainer2");
+    if (frameContainer2) {
+      frameContainer2.addEventListener("click", function (e) {
+        window.location.href = "main-loged-out.html";
+      });
+    }
+
+    var image = document.getElementById("image");
+    if (image) {
+      image.addEventListener("click", function (e) {
+        window.location.href = "./upload-post.html";
+      });
+    }
+  </script>
+</body>
+
+</html>
