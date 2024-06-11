@@ -282,7 +282,7 @@
   justify-content: flex-start;
   padding: 0 var(--padding-sm) 0 var(--padding-4xs);
 }
-.kim-swim {
+.user-name {
   flex: 1;
   position: relative;
   display: inline-block;
@@ -297,7 +297,7 @@
   justify-content: flex-end;
   padding: 0 var(--padding-18xl) 0 var(--padding-19xl);
 }
-.div5 {
+.user-description {
   align-self: stretch;
   position: relative;
   font-size: var(--font-size-sm-4);
