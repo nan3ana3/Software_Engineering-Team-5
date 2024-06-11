@@ -74,51 +74,55 @@
         </div>
       </div>
     </div>
+
     <div class="main-container">
-      <form class="main7">
+      <!-- 회원가입 폼 -->
+      <form class="main7" id="signup-form">
         <div class="main-item"></div>
         <div class="signup-form">
           <div class="signup-wrapper">
             <a class="signup1">Signup</a>
           </div>
           <div class="signup-form1">
+            <!-- 닉네임 입력란 -->
             <div class="group-div">
               <div class="div17">닉네임</div>
               <div class="rectangle-parent5">
-                <div class="frame-child22"></div>
-                <div class="div18">
-                  비밀번호와 비밀번호 확인의 문자가 같지 않습니다.
-                </div>
+                <input type="text" name="username" id="username" required />
+                <div class="div18" id="username-error"></div>
               </div>
             </div>
+
+            <!-- ID 입력란 -->
             <div class="id-group">
               <div class="id1">ID</div>
-              <div class="input-fields"></div>
-              <div class="div19">
-                비밀번호와 비밀번호 확인의 문자가 같지 않습니다.
+              <div class="input-fields">
+                <input type="text" name="id" id="id" required />
               </div>
+              <div class="div19" id="id-error"></div>
             </div>
+
+            <!-- 비밀번호 입력란 -->
             <div class="password-parent">
-              <div class="password">password</div>
+              <div class="password">비밀번호</div>
               <div class="rectangle-parent6">
-                <div class="frame-child23"></div>
-                <div class="div20">
-                  비밀번호와 비밀번호 확인의 문자가 같지 않습니다.
-                </div>
+                <input type="password" name="password" id="password" required />
               </div>
+              <div class="div20" id="password-error"></div>
             </div>
+
+            <!-- 비밀번호 확인 입력란 -->
             <div class="password-group">
-              <div class="password1">password 확인</div>
-              <div class="frame-child24"></div>
-              <div class="div21">
-                비밀번호와 비밀번호 확인의 문자가 같지 않습니다.
+              <div class="password1">비밀번호 확인</div>
+              <div class="frame-child24">
+                <input type="password" name="confirm-password" id="confirm-password" required />
               </div>
+              <div class="div21" id="confirm-password-error"></div>
             </div>
           </div>
         </div>
-        <button class="button3" id="button">
-          <div class="div22">회원가입</div>
-        </button>
+        <!-- 회원 가입 버튼 -->
+        <button type="submit" class="button3" id="signup-button">회원가입</button>
       </form>
     </div>
   </div>
@@ -158,6 +162,49 @@
         window.location.href = "./login.html";
       });
     }
+
+
+    // 회원가입 버튼 클릭 이벤트 처리
+    document.getElementById("signup-button").addEventListener("click", function (e) {
+      e.preventDefault(); // 폼의 기본 동작 방지
+
+      // 입력된 정보 가져오기
+      var username = document.getElementById("username").value;
+      var userid = document.getElementById("userid").value;
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirm-password").value;
+
+      // 서버로 보낼 데이터
+      var data = {
+        "username": username,
+        "userid": userid,
+        "password": password,
+        "confirmPassword": confirmPassword
+      };
+
+      // 서버로 POST 요청 보내기
+      fetch("/users/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then(function (data) {
+          // 서버로부터 받은 응답 처리
+          console.log(data);
+        })
+        .catch(function (error) {
+          // 오류 처리
+          console.error("There was a problem with your fetch operation:", error);
+        });
+    });
   </script>
 </body>
 
