@@ -40,17 +40,17 @@
   <div class="mainlogedout">
     <div class="navigation">
       <div class="frame-parent">
-        <div class="frame-wrapper" id="frameContainer">
+        <div class="frame-wrapper" id="buttonMain">
           <div class="frame-group">
             <div class="vector-wrapper">
-              <img class="vector-icon" loading="lazy" alt="" src="./public/vector.svg" />
+              <img class="vector-icon" loading="lazy" alt="" src="../static/public/vector.svg" />
             </div>
             <a class="main">Main</a>
           </div>
         </div>
-        <div class="frame-container" id="frameContainer1">
+        <div class="frame-container" id="buttonDM">
           <div class="message-parent">
-            <img class="message-icon" loading="lazy" alt="" src="./public/message.svg" />
+            <img class="message-icon" loading="lazy" alt="" src="../static/public/message.svg" />
 
             <div class="dm-wrapper">
               <div class="dm">DM</div>
@@ -58,18 +58,18 @@
           </div>
         </div>
       </div>
-      <div class="navigation-inner" id="frameContainer1">
+      <div class="navigation-inner" id="buttonMypage">
         <div class="mypage-content-parent">
           <div class="mypage-content">
-            <img class="face-icon" loading="lazy" alt="" src="./public/face.svg" />
+            <img class="face-icon" loading="lazy" alt="" src="../static/public/face.svg" />
           </div>
           <div class="mypage">Mypage</div>
         </div>
       </div>
-      <div class="logout-content-wrapper" id="frameContainer2">
+      <div class="logout-content-wrapper" id="buttonLogout">
         <div class="logout-content">
           <div class="logout-button">
-            <img class="group-icon" loading="lazy" alt="" src="./public/group.svg" />
+            <img class="group-icon" loading="lazy" alt="" src="../static/public/group.svg" />
           </div>
           <div class="logout">Logout</div>
         </div>
@@ -86,7 +86,7 @@
                 <p class="p1">메세지로 소통해요</p>
               </div>
               <div class="login-button-container">
-                <button class="button" id="start-service">
+                <button class="button" id="startService">
                   <div class="div2">사진이음 시작하기</div>
                 </button>
               </div>
@@ -169,37 +169,37 @@
   </div>
 
   <script>
-    var frameContainer = document.getElementById("frameContainer");
-    if (frameContainer) {
-      frameContainer.addEventListener("click", function (e) {
+    var buttonMain = document.getElementById("buttonMain");
+    if (buttonMain) {
+      buttonMain.addEventListener("click", function (e) {
         window.location.href = "./index.html";
       });
     }
 
-    var frameContainer1 = document.getElementById("frameContainer1");
-    if (frameContainer1) {
-      frameContainer1.addEventListener("click", function (e) {
+    var buttonDM = document.getElementById("buttonDM");
+    if (buttonDM) {
+      buttonDM.addEventListener("click", function (e) {
         window.location.href = "./recieved-d-m.html";
       });
     }
 
-    var frameContainer1 = document.getElementById("frameContainer1");
-    if (frameContainer1) {
-      frameContainer1.addEventListener("click", function (e) {
+    var buttonMypage = document.getElementById("buttonMypage");
+    if (buttonMypage) {
+      buttonMypage.addEventListener("click", function (e) {
         window.location.href = "./my-page.html";
       });
     }
 
-    var frameContainer2 = document.getElementById("frameContainer2");
-    if (frameContainer2) {
-      frameContainer2.addEventListener("click", function (e) {
+    var buttonLogout = document.getElementById("buttonLogout");
+    if (buttonLogout) {
+      buttonLogout.addEventListener("click", function (e) {
         window.location.href = "./index.html";
       });
     }
 
-    var frameContainer3 = document.getElementById("start-service");
-    if (frameContainer3) {
-      frameContainer3.addEventListener("click", function (e) {
+    var startService = document.getElementById("startService");
+    if (startService) {
+      startService.addEventListener("click", function (e) {
         window.location.href = "./login.html";
       });
     }
