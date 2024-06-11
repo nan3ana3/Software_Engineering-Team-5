@@ -447,11 +447,6 @@
   color: var(--color-coral-100);
   font-family: var(--font-pretendard);
 }
-.input-field{
-  width: 360px;
-  height: 60px;
-  border-radius: 10px;
-}
 @media screen and (max-width: 975px) {
   .navigation5 {
     padding-top: var(--padding-xl);
