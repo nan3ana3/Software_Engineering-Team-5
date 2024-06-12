@@ -97,7 +97,7 @@
             <div class="id-group">
               <div class="id1">ID</div>
               <div class="input-fields">
-                <input type="text" name="id" id="id" required />
+                <input type="text" name="userid" id="userid" required />
               </div>
               <div class="div19" id="id-error"></div>
             </div>
@@ -199,6 +199,9 @@
         .then(function (data) {
           // 서버로부터 받은 응답 처리
           console.log(data);
+          alert("회원가입이 완료되었습니다.");
+          window.location.href = "/users/login"; // 로그인 페이지로 리다이렉트
+
         })
         .catch(function (error) {
           // 오류 처리
