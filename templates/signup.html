@@ -37,40 +37,40 @@
 
 <body>
   <div class="signup">
-    <div class="navigation5">
-      <div class="frame-parent22">
-        <div class="frame-wrapper10" id="frameContainer">
-          <div class="frame-parent23">
-            <div class="navigation-icons-wrapper">
-              <img class="navigation-icons" alt="" src="./public/navigation-icon.svg" />
+    <div class="navigation">
+      <div class="frame-parent">
+        <div class="frame-wrapper" id="buttonMain">
+          <div class="frame-group">
+            <div class="vector-wrapper">
+              <img class="vector-icon" loading="lazy" alt="" src="../static/public/vector.svg" />
             </div>
-            <div class="main6">Main</div>
+            <a class="main">Main</a>
           </div>
         </div>
-        <div class="frame-wrapper11" id="frameContainer1">
-          <div class="message-parent3">
-            <img class="message-icon5" alt="" src="./public/message5.svg" />
+        <div class="frame-container" id="buttonDM">
+          <div class="message-parent">
+            <img class="message-icon" loading="lazy" alt="" src="../static/public/message.svg" />
 
-            <div class="dm-wrapper2">
-              <div class="dm5">DM</div>
+            <div class="dm-wrapper">
+              <div class="dm">DM</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="navigation-inner8" id="frameContainer1">
-        <div class="frame-parent24">
-          <div class="face-wrapper1">
-            <img class="face-icon5" alt="" src="./public/face1.svg" />
+      <div class="navigation-inner" id="buttonMypage">
+        <div class="mypage-content-parent">
+          <div class="mypage-content">
+            <img class="face-icon" loading="lazy" alt="" src="../static/public/face.svg" />
           </div>
-          <div class="mypage6">Mypage</div>
+          <div class="mypage">Mypage</div>
         </div>
       </div>
-      <div class="navigation-inner9" id="frameContainer2">
-        <div class="frame-parent25">
-          <div class="group-wrapper1">
-            <img class="group-icon5" alt="" src="./public/group3.svg" />
+      <div class="logout-content-wrapper" id="buttonLogout">
+        <div class="logout-content">
+          <div class="logout-button">
+            <img class="group-icon" loading="lazy" alt="" src="../static/public/group.svg" />
           </div>
-          <div class="logout5">Logout</div>
+          <div class="logout">Logout</div>
         </div>
       </div>
     </div>
@@ -85,37 +85,37 @@
           </div>
           <div class="signup-form1">
             <!-- 닉네임 입력란 -->
-            <div class="group-div">
-              <div class="div17">닉네임</div>
-              <div class="rectangle-parent5">
-                <input type="text" name="username" id="username" required />
+            <div class="input-group-div">
+              <div class="inputDescript">닉네임</div>
+              <div class="input-div">
+                <input type="text" name="username" id="username" class="input-text" required />
                 <div class="div18" id="username-error"></div>
               </div>
             </div>
 
             <!-- ID 입력란 -->
-            <div class="id-group">
-              <div class="id1">ID</div>
-              <div class="input-fields">
-                <input type="text" name="id" id="id" required />
+            <div class="input-group-div">
+              <div class="inputDescript">ID</div>
+              <div class="input-div">
+                <input type="text" name="id" id="id" class="input-text" required />
               </div>
               <div class="div19" id="id-error"></div>
             </div>
 
             <!-- 비밀번호 입력란 -->
-            <div class="password-parent">
-              <div class="password">비밀번호</div>
-              <div class="rectangle-parent6">
-                <input type="password" name="password" id="password" required />
+            <div class="input-group-div">
+              <div class="inputDescript">비밀번호</div>
+              <div class="input-div">
+                <input type="password" name="password" id="password" class="input-text" required />
               </div>
               <div class="div20" id="password-error"></div>
             </div>
 
             <!-- 비밀번호 확인 입력란 -->
-            <div class="password-group">
-              <div class="password1">비밀번호 확인</div>
-              <div class="frame-child24">
-                <input type="password" name="confirm-password" id="confirm-password" required />
+            <div class="input-group-div">
+              <div class="inputDescript">비밀번호 확인</div>
+              <div class="input-div">
+                <input type="password" name="confirm-password" id="confirm-password" class="input-text" required />
               </div>
               <div class="div21" id="confirm-password-error"></div>
             </div>
@@ -128,31 +128,31 @@
   </div>
 
   <script>
-    var frameContainer = document.getElementById("frameContainer");
-    if (frameContainer) {
-      frameContainer.addEventListener("click", function (e) {
-        window.location.href = "main-loged-out.html";
+    var buttonMain = document.getElementById("buttonMain");
+    if (buttonMain) {
+      buttonMain.addEventListener("click", function (e) {
+        window.location.href = "./index.html";
       });
     }
 
-    var frameContainer1 = document.getElementById("frameContainer1");
-    if (frameContainer1) {
-      frameContainer1.addEventListener("click", function (e) {
+    var buttonDM = document.getElementById("buttonDM");
+    if (buttonDM) {
+      buttonDM.addEventListener("click", function (e) {
         window.location.href = "./recieved-d-m.html";
       });
     }
 
-    var frameContainer1 = document.getElementById("frameContainer1");
-    if (frameContainer1) {
-      frameContainer1.addEventListener("click", function (e) {
+    var buttonMypage = document.getElementById("buttonMypage");
+    if (buttonMypage) {
+      buttonMypage.addEventListener("click", function (e) {
         window.location.href = "./my-page.html";
       });
     }
 
-    var frameContainer2 = document.getElementById("frameContainer2");
-    if (frameContainer2) {
-      frameContainer2.addEventListener("click", function (e) {
-        window.location.href = "main-loged-out.html";
+    var buttonLogout = document.getElementById("buttonLogout");
+    if (buttonLogout) {
+      buttonLogout.addEventListener("click", function (e) {
+        window.location.href = "./index.html";
       });
     }
 

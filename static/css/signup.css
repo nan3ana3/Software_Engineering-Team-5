@@ -1,9 +1,9 @@
-.navigation-icons {
+.vector-icon {
   height: 22.5px;
   width: 23.3px;
   position: relative;
 }
-.navigation-icons-wrapper {
+.vector-wrapper {
   width: 31px;
   display: flex;
   flex-direction: row;
@@ -12,62 +12,64 @@
   padding: 0 var(--padding-10xs) 0 var(--padding-9xs);
   box-sizing: border-box;
 }
-.main6 {
+.main {
+  text-decoration: none;
   position: relative;
+  color: inherit;
   display: inline-block;
   min-width: 30px;
 }
-.frame-parent23,
-.frame-wrapper10 {
+.frame-group,
+.frame-wrapper {
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
 }
-.frame-parent23 {
+.frame-group {
   flex: 1;
   flex-direction: column;
   align-items: flex-end;
   padding: var(--padding-2xs-5) var(--padding-smi);
   gap: var(--gap-8xs-5);
 }
-.frame-wrapper10 {
+.frame-wrapper {
   align-self: stretch;
   flex-direction: row;
   align-items: flex-start;
   padding: var(--padding-smi-8) var(--padding-9xs) var(--padding-smi-7);
   cursor: pointer;
 }
-.message-icon5 {
+.message-icon {
   width: 28.5px;
   height: 30px;
   position: relative;
 }
-.dm5 {
+.dm {
   position: relative;
   display: inline-block;
   min-width: 21px;
 }
-.dm-wrapper2 {
+.dm-wrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0 var(--padding-8xs) 0 var(--padding-10xs);
 }
-.message-parent3 {
+.message-parent {
   overflow: hidden;
   flex-direction: column;
   align-items: flex-start;
   padding: var(--padding-2xs-5) var(--padding-smi);
   gap: var(--gap-8xs-5);
 }
-.frame-parent22,
-.frame-wrapper11,
-.message-parent3 {
+.frame-container,
+.frame-parent,
+.message-parent {
   display: flex;
   justify-content: flex-start;
 }
-.frame-wrapper11 {
+.frame-container {
   overflow: hidden;
   flex-direction: row;
   align-items: flex-start;
@@ -76,42 +78,42 @@
   z-index: 1;
   margin-top: -0.2px;
 }
-.frame-parent22 {
+.frame-parent {
   align-self: stretch;
   flex-direction: column;
   align-items: flex-end;
   padding: 0 var(--padding-12xs) 0 0;
 }
-.face-icon5 {
+.face-icon {
   height: 23.6px;
   width: 26.3px;
   position: relative;
 }
-.face-wrapper1 {
+.mypage-content {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0 var(--padding-2xs) 0 var(--padding-xs);
 }
-.mypage6 {
+.mypage {
   position: relative;
   display: inline-block;
   min-width: 49px;
 }
-.frame-parent24,
-.navigation-inner8 {
+.mypage-content-parent,
+.navigation-inner {
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
 }
-.frame-parent24 {
+.mypage-content-parent {
   flex-direction: column;
   align-items: flex-end;
   padding: var(--padding-2xs-5) var(--padding-smi) var(--padding-2xs-6);
   gap: var(--gap-8xs-4);
 }
-.navigation-inner8 {
+.navigation-inner {
   margin-left: -9.5px;
   flex-shrink: 0;
   flex-direction: row;
@@ -119,24 +121,24 @@
   padding: var(--padding-smi-8) var(--padding-9xs) var(--padding-smi-7);
   cursor: pointer;
 }
-.group-icon5 {
+.group-icon {
   height: 24.8px;
   width: 22.5px;
   position: relative;
 }
-.group-wrapper1 {
+.logout-button {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0 var(--padding-3xs) 0 var(--padding-2xs);
 }
-.logout5 {
+.logout {
   position: relative;
   display: inline-block;
   min-width: 43px;
 }
-.frame-parent25 {
+.logout-content {
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -145,30 +147,33 @@
   padding: var(--padding-2xs-5) var(--padding-smi) var(--padding-2xs-6);
   gap: var(--gap-8xs-4);
 }
-.navigation-inner9,
-.navigation5 {
+.logout-content-wrapper,
+.navigation {
   flex-shrink: 0;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.navigation-inner9 {
+.logout-content-wrapper {
   margin-left: -6.5px;
   overflow: hidden;
   flex-direction: row;
   padding: var(--padding-smi-8) var(--padding-9xs) var(--padding-smi-7);
   cursor: pointer;
 }
-.navigation5 {
+.navigation {
   height: 810px;
   width: 75px;
   background-color: var(--color-antiquewhite);
-  overflow-y: auto;
+  overflow-y: hidden;
   flex-direction: column;
   padding: var(--padding-10xs) var(--padding-9xs) var(--padding-787xl);
   box-sizing: border-box;
   gap: var(--gap-12xs);
 }
+
+/* navigation */
+
 .main-item {
   width: 530.3px;
   height: 768px;
@@ -197,7 +202,7 @@
   justify-content: center;
   padding: 0 var(--padding-xl);
 }
-.div17 {
+.inputDescript {
   position: relative;
   font-size: var(--font-size-xl-3);
   font-family: var(--font-pretendard);
@@ -222,21 +227,21 @@
   color: var(--color-red);
   text-align: left;
 }
-.group-div,
-.rectangle-parent5 {
+.input-group-div,
+.input-div {
   align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.rectangle-parent5 {
+.input-div {
   height: 75.5px;
   gap: var(--gap-8xs-5);
   flex-shrink: 0;
   debug_commit: bf4bc93;
 }
-.group-div {
+.input-group-div {
   height: 107.5px;
   padding: 0 0 83.5px;
   box-sizing: border-box;
@@ -250,14 +255,6 @@
   text-align: center;
   display: inline-block;
   min-width: 19px;
-}
-.input-fields {
-  align-self: stretch;
-  height: 57px;
-  position: relative;
-  border-radius: var(--br-5xs-5);
-  background-color: var(--color-snow);
-  flex-shrink: 0;
 }
 .div19 {
   position: relative;
@@ -389,19 +386,22 @@
   border: 0;
   padding: var(--padding-mini-3) var(--padding-xl) var(--padding-mini-2);
   background-color: var(--color-coral-100);
-  width: 357.8px;
+  width: 360px;
+  height: 60px;
   border-radius: var(--br-3xl-5);
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   box-sizing: border-box;
   max-width: 100%;
   z-index: 1;
+  font-size: 20px;
 }
 .button3:hover {
   background-color: var(--color-chocolate-200);
+  color: aliceblue;
 }
 .main-container,
 .main7,
@@ -447,11 +447,15 @@
   color: var(--color-coral-100);
   font-family: var(--font-pretendard);
 }
-.input-field{
+
+.input-text
+{
   width: 360px;
   height: 60px;
+  font-size: 20px;
   border-radius: 10px;
 }
+
 @media screen and (max-width: 975px) {
   .navigation5 {
     padding-top: var(--padding-xl);
@@ -486,7 +490,7 @@
   .signup1 {
     font-size: var(--font-size-3xl);
   }
-  .div17,
+  .inputDescript,
   .id1,
   .password,
   .password1 {
