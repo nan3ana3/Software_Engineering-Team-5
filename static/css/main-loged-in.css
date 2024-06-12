@@ -1,9 +1,9 @@
-.vector-icon2 {
+.vector-icon {
   height: 22.5px;
   width: 23.3px;
   position: relative;
 }
-.vector-frame {
+.vector-wrapper {
   width: 31px;
   display: flex;
   flex-direction: row;
@@ -12,62 +12,64 @@
   padding: 0 var(--padding-10xs) 0 var(--padding-9xs);
   box-sizing: border-box;
 }
-.main3 {
+.main {
+  text-decoration: none;
   position: relative;
+  color: inherit;
   display: inline-block;
   min-width: 30px;
 }
-.frame-parent11,
-.frame-wrapper6 {
+.frame-group,
+.frame-wrapper {
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
 }
-.frame-parent11 {
+.frame-group {
   flex: 1;
   flex-direction: column;
   align-items: flex-end;
   padding: var(--padding-2xs-5) var(--padding-smi);
   gap: var(--gap-8xs-5);
 }
-.frame-wrapper6 {
+.frame-wrapper {
   align-self: stretch;
   flex-direction: row;
   align-items: flex-start;
   padding: var(--padding-smi-8) var(--padding-9xs) var(--padding-smi-7);
   cursor: pointer;
 }
-.message-icon3 {
+.message-icon {
   width: 28.5px;
   height: 30px;
   position: relative;
 }
-.dm3 {
+.dm {
   position: relative;
   display: inline-block;
   min-width: 21px;
 }
-.dm-frame {
+.dm-wrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0 var(--padding-8xs) 0 var(--padding-10xs);
 }
-.message-parent1 {
+.message-parent {
   overflow: hidden;
   flex-direction: column;
   align-items: flex-start;
   padding: var(--padding-2xs-5) var(--padding-smi);
   gap: var(--gap-8xs-5);
 }
-.frame-parent10,
-.frame-wrapper7,
-.message-parent1 {
+.frame-container,
+.frame-parent,
+.message-parent {
   display: flex;
   justify-content: flex-start;
 }
-.frame-wrapper7 {
+.frame-container {
   overflow: hidden;
   flex-direction: row;
   align-items: flex-start;
@@ -76,42 +78,42 @@
   z-index: 1;
   margin-top: -0.2px;
 }
-.frame-parent10 {
+.frame-parent {
   align-self: stretch;
   flex-direction: column;
   align-items: flex-end;
   padding: 0 var(--padding-12xs) 0 0;
 }
-.face-icon3 {
+.face-icon {
   height: 23.6px;
   width: 26.3px;
   position: relative;
 }
-.face-container {
+.mypage-content {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0 var(--padding-2xs) 0 var(--padding-xs);
 }
-.mypage4 {
+.mypage {
   position: relative;
   display: inline-block;
   min-width: 49px;
 }
-.frame-parent12,
-.navigation-inner4 {
+.mypage-content-parent,
+.navigation-inner {
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
 }
-.frame-parent12 {
+.mypage-content-parent {
   flex-direction: column;
   align-items: flex-end;
   padding: var(--padding-2xs-5) var(--padding-smi) var(--padding-2xs-6);
   gap: var(--gap-8xs-4);
 }
-.navigation-inner4 {
+.navigation-inner {
   margin-left: -9.5px;
   flex-shrink: 0;
   flex-direction: row;
@@ -119,24 +121,24 @@
   padding: var(--padding-smi-8) var(--padding-9xs) var(--padding-smi-7);
   cursor: pointer;
 }
-.group-icon3 {
+.group-icon {
   height: 24.8px;
   width: 22.5px;
   position: relative;
 }
-.group-container {
+.logout-button {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0 var(--padding-3xs) 0 var(--padding-2xs);
 }
-.logout3 {
+.logout {
   position: relative;
   display: inline-block;
   min-width: 43px;
 }
-.frame-parent13 {
+.logout-content {
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -145,25 +147,25 @@
   padding: var(--padding-2xs-5) var(--padding-smi) var(--padding-2xs-6);
   gap: var(--gap-8xs-4);
 }
-.navigation-inner5,
-.navigation3 {
+.logout-content-wrapper,
+.navigation {
   flex-shrink: 0;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.navigation-inner5 {
+.logout-content-wrapper {
   margin-left: -6.5px;
   overflow: hidden;
   flex-direction: row;
   padding: var(--padding-smi-8) var(--padding-9xs) var(--padding-smi-7);
   cursor: pointer;
 }
-.navigation3 {
-  height: 809.5px;
+.navigation {
+  height: 810px;
   width: 75px;
   background-color: var(--color-antiquewhite);
-  overflow-y: auto;
+  overflow-y: hidden;
   flex-direction: column;
   padding: var(--padding-10xs) var(--padding-9xs) var(--padding-787xl);
   box-sizing: border-box;
@@ -187,7 +189,7 @@
   z-index: 1;
 }
 .div12,
-.wrapper {
+.search-section {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -201,7 +203,7 @@
   justify-content: flex-end;
   padding: 13.5px var(--padding-8xl);
 }
-.wrapper {
+.search-section {
   align-self: stretch;
   justify-content: center;
   padding: 0 var(--padding-xl) 0 var(--padding-6xl);
@@ -216,7 +218,7 @@
   min-width: 93px;
 }
 .button1,
-.container {
+.button-upload-container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -234,7 +236,7 @@
 .button1:hover {
   background-color: var(--color-chocolate-200);
 }
-.container {
+.button-upload-container {
   justify-content: flex-end;
   padding: 0 var(--padding-sm);
 }
@@ -388,13 +390,13 @@
 }
 .div14,
 .frame-parent14,
-.frame-parent15 {
+.post-list-view {
   align-self: stretch;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.div14 {
+.post-list-view {
   height: 504px;
   overflow-y: auto;
   flex-shrink: 0;
@@ -404,7 +406,7 @@
   gap: 22.5px;
 }
 .frame-parent14,
-.frame-parent15 {
+.post-list-view {
   align-items: flex-end;
   gap: 27.8px;
 }
@@ -441,13 +443,20 @@
   color: var(--color-coral-100);
   font-family: var(--font-pretendard);
 }
+.search-input{
+  width: 600px;
+  height: 28px;
+  font-size: 18px;
+  border: none;
+  background-color: var(--color-whitesmoke-100);
+}
 @media screen and (max-width: 1200px) {
   .mainlogedin {
     gap: 91px;
   }
 }
 @media screen and (max-width: 1050px) {
-  .div14,
+  .post-list-view,
   .navigation3 {
     box-sizing: border-box;
   }
@@ -455,7 +464,7 @@
     padding-top: var(--padding-xl);
     padding-bottom: var(--padding-505xl);
   }
-  .div14 {
+  .post-list-view {
     padding-bottom: 123px;
   }
 }
@@ -468,12 +477,12 @@
   .rectangle-group {
     gap: var(--gap-xl);
   }
-  .div14,
+  .post-list-view,
   .frame-parent16 {
     padding-bottom: 109px;
     box-sizing: border-box;
   }
-  .div14 {
+  .post-list-view {
     height: auto;
     padding-bottom: 80px;
   }
