@@ -296,14 +296,14 @@
   align-self: stretch;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-end;
-  padding: 0 var(--padding-18xl) 0 var(--padding-19xl);
+  padding: 0 var(--padding-18xl) 0 var(--padding-18xl);
 }
 .user-description {
-  align-self: stretch;
+  align-self: center;
   position: relative;
-  font-size: var(--font-size-sm-4);
+  font-size: var(--font-size-sm-8);
   z-index: 1;
 }
 .user,
@@ -324,15 +324,18 @@
   align-items: flex-start;
 }
 .user {
-  flex: 1;
   border-radius: 22.25px;
+  background-color: var(--color-white);
+  border: 0.7px solid var(--black);
+  flex: 1;
   padding: var(--padding-9xl-1) var(--padding-8xl) var(--padding-34xl-8);
   position: relative;
   gap: var(--gap-5xl-9);
   debug_commit: bf4bc93;
 }
 .user-row {
-  width: 248.5px;
+  width: 250px;
+  height: 340px;
   padding: var(--padding-9xs) 0 0;
   box-sizing: border-box;
 }
@@ -364,6 +367,13 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0 var(--padding-sm) 0 var(--padding-4xs);
+}
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: rgb(194, 103, 103);
+  align-self: center;
 }
 .kim-swim1 {
   flex: 1;
@@ -640,7 +650,7 @@
   box-sizing: border-box;
   gap: var(--gap-xl-8);
 }
-.div4,
+.user-list-view,
 .user4 {
   flex-shrink: 0;
   box-sizing: border-box;
@@ -658,17 +668,18 @@
   gap: var(--gap-5xl-9);
   debug_commit: bf4bc93;
 }
-.div4 {
-  width: 1101px;
-  height: 353px;
+.user-list-view {
+  width: 1100px;
+  height: 400px;
   overflow-x: auto;
+  overflow-y: hidden;
   flex-direction: row;
   padding: 6.5px var(--padding-10xs) 8.7px;
   gap: 33.5px;
   max-width: 100%;
   font-size: var(--font-size-lg-5);
 }
-.div4,
+.user-list-view,
 .main-description,
 .main-description-wrapper,
 .mainlogedout {
@@ -733,7 +744,7 @@
   .parent {
     gap: var(--gap-base);
   }
-  .div4 {
+  .user-list-view {
     gap: var(--gap-mid);
   }
   .main-description-wrapper {
