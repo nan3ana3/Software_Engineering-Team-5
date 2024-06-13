@@ -1,9 +1,9 @@
-.vector-icon4 {
+.vector-icon {
   height: 22.5px;
   width: 23.3px;
   position: relative;
 }
-.vector-wrapper2 {
+.vector-wrapper {
   width: 31px;
   display: flex;
   flex-direction: row;
@@ -12,62 +12,64 @@
   padding: 0 var(--padding-10xs) 0 var(--padding-9xs);
   box-sizing: border-box;
 }
-.main8 {
+.main {
+  text-decoration: none;
   position: relative;
+  color: inherit;
   display: inline-block;
   min-width: 30px;
 }
-.frame-parent27,
-.frame-wrapper12 {
+.frame-group,
+.frame-wrapper {
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
 }
-.frame-parent27 {
+.frame-group {
   flex: 1;
   flex-direction: column;
   align-items: flex-end;
   padding: var(--padding-2xs-5) var(--padding-smi);
   gap: var(--gap-8xs-5);
 }
-.frame-wrapper12 {
+.frame-wrapper {
   align-self: stretch;
   flex-direction: row;
   align-items: flex-start;
   padding: var(--padding-smi-8) var(--padding-9xs) var(--padding-smi-7);
   cursor: pointer;
 }
-.message-icon6 {
+.message-icon {
   width: 28.5px;
   height: 30px;
   position: relative;
 }
-.dm6 {
+.dm {
   position: relative;
   display: inline-block;
   min-width: 21px;
 }
-.dm-wrapper3 {
+.dm-wrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0 var(--padding-8xs) 0 var(--padding-10xs);
 }
-.message-parent4 {
+.message-parent {
   overflow: hidden;
   flex-direction: column;
   align-items: flex-start;
   padding: var(--padding-2xs-5) var(--padding-smi);
   gap: var(--gap-8xs-5);
 }
-.frame-parent26,
-.frame-wrapper13,
-.message-parent4 {
+.frame-container,
+.frame-parent,
+.message-parent {
   display: flex;
   justify-content: flex-start;
 }
-.frame-wrapper13 {
+.frame-container {
   overflow: hidden;
   flex-direction: row;
   align-items: flex-start;
@@ -76,42 +78,42 @@
   z-index: 1;
   margin-top: -0.2px;
 }
-.frame-parent26 {
+.frame-parent {
   align-self: stretch;
   flex-direction: column;
   align-items: flex-end;
   padding: 0 var(--padding-12xs) 0 0;
 }
-.face-icon6 {
+.face-icon {
   height: 23.6px;
   width: 26.3px;
   position: relative;
 }
-.face-wrapper2 {
+.mypage-content {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0 var(--padding-2xs) 0 var(--padding-xs);
 }
-.mypage7 {
+.mypage {
   position: relative;
   display: inline-block;
   min-width: 49px;
 }
-.frame-parent28,
-.navigation-inner10 {
+.mypage-content-parent,
+.navigation-inner {
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
 }
-.frame-parent28 {
+.mypage-content-parent {
   flex-direction: column;
   align-items: flex-end;
   padding: var(--padding-2xs-5) var(--padding-smi) var(--padding-2xs-6);
   gap: var(--gap-8xs-4);
 }
-.navigation-inner10 {
+.navigation-inner {
   margin-left: -9.5px;
   flex-shrink: 0;
   flex-direction: row;
@@ -119,24 +121,24 @@
   padding: var(--padding-smi-8) var(--padding-9xs) var(--padding-smi-7);
   cursor: pointer;
 }
-.group-icon6 {
+.group-icon {
   height: 24.8px;
   width: 22.5px;
   position: relative;
 }
-.group-wrapper2 {
+.logout-button {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0 var(--padding-3xs) 0 var(--padding-2xs);
 }
-.logout6 {
+.logout {
   position: relative;
   display: inline-block;
   min-width: 43px;
 }
-.frame-parent29 {
+.logout-content {
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -145,25 +147,25 @@
   padding: var(--padding-2xs-5) var(--padding-smi) var(--padding-2xs-6);
   gap: var(--gap-8xs-4);
 }
-.navigation-inner11,
-.navigation6 {
+.logout-content-wrapper,
+.navigation {
   flex-shrink: 0;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.navigation-inner11 {
+.logout-content-wrapper {
   margin-left: -6.5px;
   overflow: hidden;
   flex-direction: row;
   padding: var(--padding-smi-8) var(--padding-9xs) var(--padding-smi-7);
   cursor: pointer;
 }
-.navigation6 {
+.navigation {
   height: 810px;
   width: 75px;
   background-color: var(--color-antiquewhite);
-  overflow-y: auto;
+  overflow-y: hidden;
   flex-direction: column;
   padding: var(--padding-10xs) var(--padding-9xs) var(--padding-787xl);
   box-sizing: border-box;
@@ -375,14 +377,14 @@
   }
 }
 @media screen and (max-width: 1050px) {
-  .navigation6 {
+  .navigation {
     padding-top: var(--padding-xl);
     padding-bottom: var(--padding-505xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 750px) {
-  .navigation6 {
+  .navigation {
     display: none;
     padding-bottom: var(--padding-322xl);
     box-sizing: border-box;
