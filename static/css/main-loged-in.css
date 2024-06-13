@@ -171,6 +171,9 @@
   box-sizing: border-box;
   gap: var(--gap-12xs);
 }
+
+/* navigation */
+
 .child,
 .item {
   position: relative;

@@ -5,8 +5,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-  <link rel="stylesheet" href="../css/global.css" />
-  <link rel="stylesheet" href="../css/others-post.css" />
+  <link rel="stylesheet" href="../static/css/global.css" />
+  <link rel="stylesheet" href="../static/css/others-post.css" />
 
   <style>
     @font-face {
@@ -37,43 +37,45 @@
 
 <body>
   <div class="otherspost">
-    <div class="navigation7">
-      <div class="frame-parent30">
-        <div class="frame-wrapper14" id="frameContainer">
-          <div class="frame-parent31">
-            <div class="vector-wrapper3">
-              <img class="vector-icon5" alt="" src="./public/navigation-icon.svg" />
-            </div>
-            <div class="main9">Main</div>
-          </div>
-        </div>
-        <div class="frame-wrapper15" id="frameContainer1">
-          <div class="message-parent5">
-            <img class="message-icon7" alt="" src="./public/message7.svg" />
 
-            <div class="dm-wrapper4">
-              <div class="dm7">DM</div>
+    <div class="navigation">
+      <div class="frame-parent">
+        <div class="frame-wrapper" id="buttonMain">
+          <div class="frame-group">
+            <div class="vector-wrapper">
+              <img class="vector-icon" loading="lazy" alt="" src="../static/public/vector.svg" />
+            </div>
+            <a class="main">Main</a>
+          </div>
+        </div>
+        <div class="frame-container" id="buttonDM">
+          <div class="message-parent">
+            <img class="message-icon" loading="lazy" alt="" src="../static/public/message.svg" />
+
+            <div class="dm-wrapper">
+              <div class="dm">DM</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="navigation-inner12" id="frameContainer1">
-        <div class="frame-parent32">
-          <div class="face-wrapper3">
-            <img class="face-icon7" alt="" src="./public/face1.svg" />
+      <div class="navigation-inner" id="buttonMypage">
+        <div class="mypage-content-parent">
+          <div class="mypage-content">
+            <img class="face-icon" loading="lazy" alt="" src="../static/public/face.svg" />
           </div>
-          <div class="mypage8">Mypage</div>
+          <div class="mypage">Mypage</div>
         </div>
       </div>
-      <div class="navigation-inner13" id="frameContainer2">
-        <div class="frame-parent33">
-          <div class="group-wrapper3">
-            <img class="group-icon7" alt="" src="./public/group1.svg" />
+      <div class="logout-content-wrapper" id="buttonLogout">
+        <div class="logout-content">
+          <div class="logout-button">
+            <img class="group-icon" loading="lazy" alt="" src="../static/public/group.svg" />
           </div>
-          <div class="logout7">Logout</div>
+          <div class="logout">Logout</div>
         </div>
       </div>
     </div>
+
     <section class="otherspost-inner">
       <div class="frame-parent34">
         <div class="frame-wrapper16">
@@ -114,31 +116,31 @@
   </div>
 
   <script>
-    var frameContainer = document.getElementById("frameContainer");
-    if (frameContainer) {
-      frameContainer.addEventListener("click", function (e) {
-        window.location.href = "main-loged-out.html";
+    var buttonMain = document.getElementById("buttonMain");
+    if (buttonMain) {
+      buttonMain.addEventListener("click", function (e) {
+        window.location.href = "./index.html";
       });
     }
 
-    var frameContainer1 = document.getElementById("frameContainer1");
-    if (frameContainer1) {
-      frameContainer1.addEventListener("click", function (e) {
+    var buttonDM = document.getElementById("buttonDM");
+    if (buttonDM) {
+      buttonDM.addEventListener("click", function (e) {
         window.location.href = "./recieved-d-m.html";
       });
     }
 
-    var frameContainer1 = document.getElementById("frameContainer1");
-    if (frameContainer1) {
-      frameContainer1.addEventListener("click", function (e) {
+    var buttonMypage = document.getElementById("buttonMypage");
+    if (buttonMypage) {
+      buttonMypage.addEventListener("click", function (e) {
         window.location.href = "./my-page.html";
       });
     }
 
-    var frameContainer2 = document.getElementById("frameContainer2");
-    if (frameContainer2) {
-      frameContainer2.addEventListener("click", function (e) {
-        window.location.href = "main-loged-out.html";
+    var buttonLogout = document.getElementById("buttonLogout");
+    if (buttonLogout) {
+      buttonLogout.addEventListener("click", function (e) {
+        window.location.href = "./index.html";
       });
     }
 

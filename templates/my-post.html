@@ -5,8 +5,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-  <link rel="stylesheet" href="../css/global.css" />
-  <link rel="stylesheet" href="../css/my-post.css" />
+  <link rel="stylesheet" href="../static/css/global.css" />
+  <link rel="stylesheet" href="../static/css/my-post.css" />
 
   <style>
     @font-face {
@@ -37,40 +37,40 @@
 
 <body>
   <div class="mypost">
-    <div class="navigation8">
-      <div class="frame-parent37">
-        <div class="frame-wrapper18" id="frameContainer">
-          <div class="frame-parent38">
-            <div class="vector-wrapper4">
-              <img class="vector-icon6" alt="" src="./public/navigation-icon.svg" />
+    <div class="navigation">
+      <div class="frame-parent">
+        <div class="frame-wrapper" id="buttonMain">
+          <div class="frame-group">
+            <div class="vector-wrapper">
+              <img class="vector-icon" loading="lazy" alt="" src="../static/public/vector.svg" />
             </div>
-            <div class="main10">Main</div>
+            <a class="main">Main</a>
           </div>
         </div>
-        <div class="frame-wrapper19" id="frameContainer1">
-          <div class="message-parent6">
-            <img class="message-icon8" alt="" src="./public/message8.svg" />
+        <div class="frame-container" id="buttonDM">
+          <div class="message-parent">
+            <img class="message-icon" loading="lazy" alt="" src="../static/public/message.svg" />
 
-            <div class="dm-wrapper6">
-              <div class="dm8">DM</div>
+            <div class="dm-wrapper">
+              <div class="dm">DM</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="navigation-inner14" id="frameContainer1">
-        <div class="frame-parent39">
-          <div class="face-wrapper4">
-            <img class="face-icon8" alt="" src="./public/face1.svg" />
+      <div class="navigation-inner" id="buttonMypage">
+        <div class="mypage-content-parent">
+          <div class="mypage-content">
+            <img class="face-icon" loading="lazy" alt="" src="../static/public/face.svg" />
           </div>
-          <div class="mypage9">Mypage</div>
+          <div class="mypage">Mypage</div>
         </div>
       </div>
-      <div class="navigation-inner15" id="frameContainer2">
-        <div class="frame-parent40">
-          <div class="group-wrapper4">
-            <img class="group-icon8" alt="" src="./public/group1.svg" />
+      <div class="logout-content-wrapper" id="buttonLogout">
+        <div class="logout-content">
+          <div class="logout-button">
+            <img class="group-icon" loading="lazy" alt="" src="../static/public/group.svg" />
           </div>
-          <div class="logout8">Logout</div>
+          <div class="logout">Logout</div>
         </div>
       </div>
     </div>
@@ -90,19 +90,19 @@
               </div>
             </div>
             <div class="edit-profile1">
-              <img class="icon3" loading="lazy" alt="" src="./public/2@2x.png" id="image" />
+              <img class="icon3" loading="lazy" alt="" src="../static/public/2@2x.png" id="image" />
             </div>
           </div>
         </div>
         <div class="user-information1">
           <div class="div29">
-            <img class="child5" loading="lazy" alt="" src="./public/group-21292.svg" />
+            <img class="child5" loading="lazy" alt="" src="../static/public/group-21292.svg" />
 
-            <img class="child6" loading="lazy" alt="" src="./public/group-2130.svg" />
+            <img class="child6" loading="lazy" alt="" src="../static/public/group-2130.svg" />
 
-            <img class="child7" loading="lazy" alt="" src="./public/group-2131.svg" />
+            <img class="child7" loading="lazy" alt="" src="../static/public/group-2131.svg" />
 
-            <img class="child8" loading="lazy" alt="" src="./public/group-21321.svg" />
+            <img class="child8" loading="lazy" alt="" src="../static/public/group-21321.svg" />
           </div>
           <div class="div30">
             <div class="description-background"></div>
@@ -114,31 +114,31 @@
   </div>
 
   <script>
-    var frameContainer = document.getElementById("frameContainer");
-    if (frameContainer) {
-      frameContainer.addEventListener("click", function (e) {
-        window.location.href = "main-loged-out.html";
+    var buttonMain = document.getElementById("buttonMain");
+    if (buttonMain) {
+      buttonMain.addEventListener("click", function (e) {
+        window.location.href = "./index.html";
       });
     }
 
-    var frameContainer1 = document.getElementById("frameContainer1");
-    if (frameContainer1) {
-      frameContainer1.addEventListener("click", function (e) {
+    var buttonDM = document.getElementById("buttonDM");
+    if (buttonDM) {
+      buttonDM.addEventListener("click", function (e) {
         window.location.href = "./recieved-d-m.html";
       });
     }
 
-    var frameContainer1 = document.getElementById("frameContainer1");
-    if (frameContainer1) {
-      frameContainer1.addEventListener("click", function (e) {
+    var buttonMypage = document.getElementById("buttonMypage");
+    if (buttonMypage) {
+      buttonMypage.addEventListener("click", function (e) {
         window.location.href = "./my-page.html";
       });
     }
 
-    var frameContainer2 = document.getElementById("frameContainer2");
-    if (frameContainer2) {
-      frameContainer2.addEventListener("click", function (e) {
-        window.location.href = "main-loged-out.html";
+    var buttonLogout = document.getElementById("buttonLogout");
+    if (buttonLogout) {
+      buttonLogout.addEventListener("click", function (e) {
+        window.location.href = "./index.html";
       });
     }
 

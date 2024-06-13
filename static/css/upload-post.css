@@ -171,6 +171,9 @@
   box-sizing: border-box;
   gap: var(--gap-12xs);
 }
+
+/* navigagion */
+
 .h21 {
   margin: 0;
   position: relative;
