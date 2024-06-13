@@ -52,7 +52,7 @@ def sendingDM_page():
     return render_template('sending-d-m.html')
 
 
-@app.route('/modify-me', methods=['GET'])
+@app.route('/modifyme', methods=['GET'])
 def modifyme_page():
     return render_template('modify-me.html')
 
@@ -62,9 +62,19 @@ def mypage_page():
     return render_template('my-page.html')
 
 
-@app.route('/upload-post', methods=['GET'])
+@app.route('/uploadpost', methods=['GET'])
 def uploadpost_page():
     return render_template('upload-post.html')
+
+
+@app.route('/mypost', methods=['GET'])
+def mypost():
+    return render_template('my-post.html')
+
+
+@app.route('/otherpost', methods=['GET'])
+def otherpost():
+    return render_template('otherpost.html')
 
 
 if __name__ == '__main__':

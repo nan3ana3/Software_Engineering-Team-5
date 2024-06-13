@@ -7,29 +7,30 @@
 
   <link rel="stylesheet" href="../static/css/global.css" />
   <link rel="stylesheet" href="../static/css/login.css" />
+  <script type="text/javascript" src="/static/js/navigation.js"></script>
 
   <style>
     @font-face {
       font-family: "Pretendard";
-      src: url("./public/Pretendard-Regular.otf");
+      src: url("static/public/Pretendard-Regular.otf");
       font-weight: 400;
     }
 
     @font-face {
       font-family: "Pretendard";
-      src: url("./public/Pretendard-Medium.otf");
+      src: url("static/public/Pretendard-Medium.otf");
       font-weight: 500;
     }
 
     @font-face {
       font-family: "Pretendard";
-      src: url("./public/Pretendard-Bold.otf");
+      src: url("static/public/Pretendard-Bold.otf");
       font-weight: 700;
     }
 
     @font-face {
       font-family: "Pretendard";
-      src: url("./public/Pretendard-SemiBold.otf");
+      src: url("static/public/Pretendard-SemiBold.otf");
       font-weight: 600;
     }
   </style>
@@ -71,34 +72,6 @@
   </div>
 
   <script>
-    var buttonMain = document.getElementById("buttonMain");
-    if (buttonMain) {
-      buttonMain.addEventListener("click", function (e) {
-        window.location.href = "/index";
-      });
-    }
-
-    var buttonDM = document.getElementById("buttonDM");
-    if (buttonDM) {
-      buttonDM.addEventListener("click", function (e) {
-        window.location.href = "/receivedDM";
-      });
-    }
-
-    var buttonMypage = document.getElementById("buttonMypage");
-    if (buttonMypage) {
-      buttonMypage.addEventListener("click", function (e) {
-        window.location.href = "/mypage";
-      });
-    }
-
-    var buttonLogout = document.getElementById("buttonLogout");
-    if (buttonLogout) {
-      buttonLogout.addEventListener("click", function (e) {
-        window.location.href = "/";
-      });
-    }
-
     var button = document.getElementById("button");
     if (button) {
       button.addEventListener("click", function (e) {

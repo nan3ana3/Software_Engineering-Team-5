@@ -6,14 +6,12 @@
   <meta name="viewport" content="initial-scale=1, width=device-width" />
   <link rel="stylesheet" href="../static/css/global.css" />
   <link rel="stylesheet" href="../static/css/index.css" />
-  <!-- <script type="text/javascript" src="/static/js/navigation.js"></script> -->
-  <!-- <script src="/static/js/include.js" defer></script> -->
+  <script type="text/javascript" src="/static/js/navigation.js"></script>
 </head>
 
 <body>
   <div class="mainlogedout">
     {% include 'navigation.html' %}
-    <!-- <div data-include-path="navigation.html"></div> -->
     <section class="main-description-wrapper">
       <div class="main-description">
         <div class="main-description-inner">
@@ -52,33 +50,34 @@
     </section>
   </div>
   <script>
-    var buttonMain = document.getElementById("buttonMain");
-    if (buttonMain) {
-      buttonMain.addEventListener("click", function (e) {
-        window.location.href = "/";
-      });
-    }
+    // var buttonMain = document.getElementById("buttonMain");
+    // if (buttonMain) {
+    //   buttonMain.addEventListener("click", function (e) {
+    //     // login 상태면 "/main" logout 상태면 "/"
+    //     window.location.href = "/";
+    //   });
+    // }
 
-    var buttonDM = document.getElementById("buttonDM");
-    if (buttonDM) {
-      buttonDM.addEventListener("click", function (e) {
-        window.location.href = "/receivedDM";
-      });
-    }
+    // var buttonDM = document.getElementById("buttonDM");
+    // if (buttonDM) {
+    //   buttonDM.addEventListener("click", function (e) {
+    //     window.location.href = "/receivedDM";
+    //   });
+    // }
 
-    var buttonMypage = document.getElementById("buttonMypage");
-    if (buttonMypage) {
-      buttonMypage.addEventListener("click", function (e) {
-        window.location.href = "/mypage";
-      });
-    }
+    // var buttonMypage = document.getElementById("buttonMypage");
+    // if (buttonMypage) {
+    //   buttonMypage.addEventListener("click", function (e) {
+    //     window.location.href = "/mypage";
+    //   });
+    // }
 
-    var buttonLogout = document.getElementById("buttonLogout");
-    if (buttonLogout) {
-      buttonLogout.addEventListener("click", function (e) {
-        window.location.href = "/";
-      });
-    }
+    // var buttonLogout = document.getElementById("buttonLogout");
+    // if (buttonLogout) {
+    //   buttonLogout.addEventListener("click", function (e) {
+    //     window.location.href = "/";
+    //   });
+    // }
 
     var startService = document.getElementById("startService");
     if (startService) {
