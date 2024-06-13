@@ -37,49 +37,13 @@
 
 <body>
   <div class="mainlogedin">
-    <div class="navigation">
-      <div class="frame-parent">
-        <div class="frame-wrapper" id="buttonMain">
-          <div class="frame-group">
-            <div class="vector-wrapper">
-              <img class="vector-icon" loading="lazy" alt="" src="../static/public/vector.svg" />
-            </div>
-            <a class="main">Main</a>
-          </div>
-        </div>
-        <div class="frame-container" id="buttonDM">
-          <div class="message-parent">
-            <img class="message-icon" loading="lazy" alt="" src="../static/public/message.svg" />
-
-            <div class="dm-wrapper">
-              <div class="dm">DM</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navigation-inner" id="buttonMypage">
-        <div class="mypage-content-parent">
-          <div class="mypage-content">
-            <img class="face-icon" loading="lazy" alt="" src="../static/public/face.svg" />
-          </div>
-          <div class="mypage">Mypage</div>
-        </div>
-      </div>
-      <div class="logout-content-wrapper" id="buttonLogout">
-        <div class="logout-content">
-          <div class="logout-button">
-            <img class="group-icon" loading="lazy" alt="" src="../static/public/group.svg" />
-          </div>
-          <div class="logout">Logout</div>
-        </div>
-      </div>
-    </div>
+    {% include 'navigation.html' %}
     <section class="mainlogedin-inner">
       <div class="frame-parent14">
         <section class="search-section">
           <div class="search-div">
             <input type="text" name="search" class="search-input" id="search">
-            <img class="item" loading="lazy" alt="" src="../src/public/group-2185.svg" />
+            <img class="item" id="buttonSearch" loading="lazy" src="../static/public/group-2185.svg" />
           </div>
         </section>
         <div class="button-upload-container">
@@ -88,7 +52,7 @@
           </button>
         </div>
         <!-- 게시글 리스트 뷰
-          img 어떻게 넣게될 지 모르겠어서 일단 그래로 둡니다..! -->
+          img 어떻게 넣게될 지 잘 모르겠어서 일단 그래로 둡니다..! -->
         <div class="post-list-view">
           <div class="rectangle-group">
             <img class="rectangle-icon" loading="lazy" alt="" src="./public/rectangle-4762@2x.png"

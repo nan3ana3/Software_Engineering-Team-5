@@ -37,43 +37,7 @@
 
 <body>
   <div class="login">
-    <div class="navigation">
-      <div class="frame-parent">
-        <div class="frame-wrapper" id="buttonMain">
-          <div class="frame-group">
-            <div class="vector-wrapper">
-              <img class="vector-icon" loading="lazy" alt="" src="../static/public/vector.svg" />
-            </div>
-            <a class="main">Main</a>
-          </div>
-        </div>
-        <div class="frame-container" id="buttonDM">
-          <div class="message-parent">
-            <img class="message-icon" loading="lazy" alt="" src="../static/public/message.svg" />
-
-            <div class="dm-wrapper">
-              <div class="dm">DM</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navigation-inner" id="buttonMypage">
-        <div class="mypage-content-parent">
-          <div class="mypage-content">
-            <img class="face-icon" loading="lazy" alt="" src="../static/public/face.svg" />
-          </div>
-          <div class="mypage">Mypage</div>
-        </div>
-      </div>
-      <div class="logout-content-wrapper" id="buttonLogout">
-        <div class="logout-content">
-          <div class="logout-button">
-            <img class="group-icon" loading="lazy" alt="" src="../static/public/group.svg" />
-          </div>
-          <div class="logout">Logout</div>
-        </div>
-      </div>
-    </div>
+    {% include 'navigation.html' %}
     <!-- 로그인 페이지 -->
     <div class="main-wrapper">
       <div class="main5">
@@ -110,49 +74,42 @@
     var buttonMain = document.getElementById("buttonMain");
     if (buttonMain) {
       buttonMain.addEventListener("click", function (e) {
-        window.location.href = "./index.html";
+        window.location.href = "/index";
       });
     }
 
     var buttonDM = document.getElementById("buttonDM");
     if (buttonDM) {
       buttonDM.addEventListener("click", function (e) {
-        window.location.href = "./recieved-d-m.html";
+        window.location.href = "/receivedDM";
       });
     }
 
     var buttonMypage = document.getElementById("buttonMypage");
     if (buttonMypage) {
       buttonMypage.addEventListener("click", function (e) {
-        window.location.href = "./my-page.html";
+        window.location.href = "/mypage";
       });
     }
 
     var buttonLogout = document.getElementById("buttonLogout");
     if (buttonLogout) {
       buttonLogout.addEventListener("click", function (e) {
-        window.location.href = "./index.html";
-      });
-    }
-
-    var startService = document.getElementById("startService");
-    if (startService) {
-      startService.addEventListener("click", function (e) {
-        window.location.href = "./login.html";
+        window.location.href = "/";
       });
     }
 
     var button = document.getElementById("button");
     if (button) {
       button.addEventListener("click", function (e) {
-        window.location.href = "./main-loged-in.html";
+        window.location.href = "/main";
       });
     }
 
     var signupButton = document.getElementById("signup-button");
     if (signupButton) {
       signupButton.addEventListener("click", function (e) {
-        window.location.href = "./signup.html";
+        window.location.href = "/signup";
       });
     }
 
@@ -190,7 +147,7 @@
             // 서버로부터 받은 응답 처리
             console.log(data);
             // 로그인 성공 시 처리 (예: 다음 페이지로 리다이렉트)
-            window.location.href = "/main-loged-in.html";
+            window.location.href = "/main";
           })
           .catch(function (error) {
             // 오류 처리

@@ -6,46 +6,14 @@
   <meta name="viewport" content="initial-scale=1, width=device-width" />
   <link rel="stylesheet" href="../static/css/global.css" />
   <link rel="stylesheet" href="../static/css/index.css" />
+  <!-- <script type="text/javascript" src="/static/js/navigation.js"></script> -->
+  <!-- <script src="/static/js/include.js" defer></script> -->
 </head>
 
 <body>
   <div class="mainlogedout">
-    <div class="navigation">
-      <div class="frame-parent">
-        <div class="frame-wrapper" id="buttonMain">
-          <div class="frame-group">
-            <div class="vector-wrapper">
-              <img class="vector-icon" loading="lazy" alt="" src="../static/public/vector.svg" />
-            </div>
-            <a class="main">Main</a>
-          </div>
-        </div>
-        <div class="frame-container" id="buttonDM">
-          <div class="message-parent">
-            <img class="message-icon" loading="lazy" alt="" src="../static/public/message.svg" />
-            <div class="dm-wrapper">
-              <div class="dm">DM</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navigation-inner" id="buttonMypage">
-        <div class="mypage-content-parent">
-          <div class="mypage-content">
-            <img class="face-icon" loading="lazy" alt="" src="../static/public/face.svg" />
-          </div>
-          <div class="mypage">Mypage</div>
-        </div>
-      </div>
-      <div class="logout-content-wrapper" id="buttonLogout">
-        <div class="logout-content">
-          <div class="logout-button">
-            <img class="group-icon" loading="lazy" alt="" src="../static/public/group.svg" />
-          </div>
-          <div class="logout">Logout</div>
-        </div>
-      </div>
-    </div>
+    {% include 'navigation.html' %}
+    <!-- <div data-include-path="navigation.html"></div> -->
     <section class="main-description-wrapper">
       <div class="main-description">
         <div class="main-description-inner">
@@ -87,34 +55,35 @@
     var buttonMain = document.getElementById("buttonMain");
     if (buttonMain) {
       buttonMain.addEventListener("click", function (e) {
-        window.location.href = "./index.html";
+        window.location.href = "/";
       });
     }
 
     var buttonDM = document.getElementById("buttonDM");
     if (buttonDM) {
       buttonDM.addEventListener("click", function (e) {
-        window.location.href = "./recieved-d-m.html";
+        window.location.href = "/receivedDM";
       });
     }
 
     var buttonMypage = document.getElementById("buttonMypage");
     if (buttonMypage) {
       buttonMypage.addEventListener("click", function (e) {
-        window.location.href = "./my-page.html";
+        window.location.href = "/mypage";
       });
     }
 
     var buttonLogout = document.getElementById("buttonLogout");
     if (buttonLogout) {
       buttonLogout.addEventListener("click", function (e) {
-        window.location.href = "./index.html";
+        window.location.href = "/";
       });
     }
+
     var startService = document.getElementById("startService");
     if (startService) {
       startService.addEventListener("click", function (e) {
-        window.location.href = "./login.html";
+        window.location.href = "/login";
       });
     }
   </script>

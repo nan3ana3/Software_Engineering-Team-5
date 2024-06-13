@@ -4,12 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     includeElements.forEach((element) => {
         const file = element.getAttribute('data-include');
         fetch(file)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok ' + response.statusText);
-                }
-                return response.text();
-            })
+            .then(response => response.text())
             .then(data => {
                 element.innerHTML = data;
 
@@ -23,33 +18,30 @@ document.addEventListener("DOMContentLoaded", function () {
                 const buttonMain = document.getElementById("buttonMain");
                 if (buttonMain) {
                     buttonMain.addEventListener("click", function (e) {
-                        window.location.href = "./index.html";
+                        window.location.href = "/";
                     });
                 }
 
                 const buttonDM = document.getElementById("buttonDM");
                 if (buttonDM) {
                     buttonDM.addEventListener("click", function (e) {
-                        window.location.href = "./recieved-d-m.html";
+                        window.location.href = "/recievedDM";
                     });
                 }
 
                 const buttonMypage = document.getElementById("buttonMypage");
                 if (buttonMypage) {
                     buttonMypage.addEventListener("click", function (e) {
-                        window.location.href = "./my-page.html";
+                        window.location.href = "/mypage";
                     });
                 }
 
                 const buttonLogout = document.getElementById("buttonLogout");
                 if (buttonLogout) {
                     buttonLogout.addEventListener("click", function (e) {
-                        window.location.href = "./index.html";
+                        window.location.href = "/";
                     });
                 }
-            })
-            .catch(error => {
-                console.error('Error loading the include file:', error);
             });
     });
 });
