@@ -1,4 +1,5 @@
 from flask import current_app as app
+from bson import ObjectId
 
 class DM:
     def __init__(self, sender_id, receiver_id, content, parent_mid=None):
@@ -24,4 +25,4 @@ class DM:
     @staticmethod
     def delete_message(mid):
         dm_collection = app.mongo['dms']
-        dm_collection.delete_one({"_id": mid})
+        dm_collection.delete_one({"_id": ObjectId(mid)})

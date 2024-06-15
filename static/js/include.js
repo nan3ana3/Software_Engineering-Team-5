@@ -18,14 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 const buttonDM = document.getElementById("buttonDM");
                 if (buttonDM) {
                     buttonDM.addEventListener("click", function (e) {
-                        window.location.href = "/receivedDM";
+                        window.location.href = "/dms/receivedDM";
                     });
                 }
 
                 const buttonMypage = document.getElementById("buttonMypage");
                 if (buttonMypage) {
                     buttonMypage.addEventListener("click", function (e) {
-                        window.location.href = "/mypage";
+                        window.location.href = "/users/mypage";
                     });
                 }
 
