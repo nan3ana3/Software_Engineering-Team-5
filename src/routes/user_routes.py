@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-from flask import Blueprint, request, jsonify, session, render_template, redirect
-=======
 from flask import Blueprint, request, jsonify, session, render_template, redirect, url_for
->>>>>>> Stashed changes
 from src.models.user import User
 from src.models.photo import Photo
 
@@ -26,6 +22,7 @@ def sign_up():
     user.save()
     return jsonify({"message": "유저 생성"}), 201
 
+
 @user_bp.route('/login', methods=['POST'])
 def login():
     data = request.get_json()
@@ -37,13 +34,14 @@ def login():
         return jsonify({"message": "로그인 성공"}), 200
     return jsonify({"message": "로그인 실패"}), 401
 
+
 @user_bp.route('/signout', methods=['POST'])
 def sign_out():
     session.pop('userid', None)
     return jsonify({"message": "로그아웃 성공"}), 200
 
 
-#2,3번 조건
+# 2,3번 조건
 @user_bp.route('/list', methods=['GET'])
 def get_user_list():
     if 'userid' not in session:
@@ -51,29 +49,20 @@ def get_user_list():
         return render_template('index.html', users=users)
     else:
         users, photos = User.get_user_listAndPhoto()
-<<<<<<< Updated upstream
-=======
         print(photos)
->>>>>>> Stashed changes
         return render_template('main-loged-in.html', users=users, photos=photos)
-
-
 
 
 @user_bp.route('/mypage', methods=['GET'])
 def mypage_page():
     if 'userid' not in session:
-<<<<<<< Updated upstream
-        return redirect('/login')
-=======
         return redirect(url_for('user_bp.login'))
->>>>>>> Stashed changes
     current_userid = session['userid']
     current_username = User.find_by_userid(current_userid)['username']
 
     # 현재 사용자가 올린 모든 이미지 가져오기
     photos = Photo.get_photos_by_user(current_userid)
-    
+
     return render_template('my-page.html', username=current_username, photos=photos)
 
 
@@ -85,7 +74,6 @@ def login_page():
 @user_bp.route('/signup', methods=['GET'])
 def signup_page():
     return render_template('signup.html')
-
 
 
 @user_bp.route('/modifyme', methods=['GET'])

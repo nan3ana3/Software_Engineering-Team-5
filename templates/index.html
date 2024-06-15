@@ -31,54 +31,33 @@
             <div class="div3">지금 이 서비스를 사용하는 친구는?</div>
           </div>
         </div>
-<<<<<<< Updated upstream
-        <hr width="500px">
-        <div class="div3">
+        <!-- <ul style="text-align: center;">
           {% for user in users %}
           {{ user.username }}
           {% endfor %}
-=======
-          <ul style="text-align: center;">
-            {% for user in users %}
-            {{ user.username }}
-            {% endfor %}
-          </ul>
->>>>>>> Stashed changes
+        </ul> -->
+        <!-- 사용자 리스트 뷰 -->
+        <div class="user-list-view">
+          {% for user in users %}
+          <div class="user-row">
+            <div class="user">
+              <div class="profile-img"></div>
+              <div class="user-name-container-parent">
+                <div class="user-name-container">
+                  <div class="user-name">{{ user.username }}</div>
+                </div>
+                <div class="user-description">안녕하세요!</div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
         </div>
       </div>
-    </section>
+  </div>
+  </section>
 
   </div>
   <script>
-    // var buttonMain = document.getElementById("buttonMain");
-    // if (buttonMain) {
-    //   buttonMain.addEventListener("click", function (e) {
-    //     // login 상태면 "/main" logout 상태면 "/"
-    //     window.location.href = "/";
-    //   });
-    // }
-
-    // var buttonDM = document.getElementById("buttonDM");
-    // if (buttonDM) {
-    //   buttonDM.addEventListener("click", function (e) {
-    //     window.location.href = "/receivedDM";
-    //   });
-    // }
-
-    // var buttonMypage = document.getElementById("buttonMypage");
-    // if (buttonMypage) {
-    //   buttonMypage.addEventListener("click", function (e) {
-    //     window.location.href = "/users/mypage";
-    //   });
-    // }
-
-    // var buttonLogout = document.getElementById("buttonLogout");
-    // if (buttonLogout) {
-    //   buttonLogout.addEventListener("click", function (e) {
-    //     window.location.href = "/";
-    //   });
-    // }
-
     var startService = document.getElementById("startService");
     if (startService) {
       startService.addEventListener("click", function (e) {
